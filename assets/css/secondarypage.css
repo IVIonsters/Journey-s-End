@@ -27,7 +27,7 @@ body {
   color: var(--clr-dark);
 }
 
-.navy a{
+.navy a {
   color: var(--clr-accent2);
 }
 
@@ -36,6 +36,6 @@ body {
   color: var(--clr-dark);
 }
 
-.shadow{
+.shadow {
   text-shadow: 1px 1px 5px black;
 }
