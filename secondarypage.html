@@ -38,6 +38,7 @@
         <!-- We could insert a logo image if we want or just use the name the name coudld be clickable for the home page if we don't want any links -->
         <a href="#" class="navbar-brand mb-0 h1"></a>
         <!-- Joe's work complete -->
+        <!-- Want to make text stand out a bit more over the images, not sure best way to make that happen, tried background and it didnt look good -->
         <div class="p-3 m-3 text-center bg-image align-items-center justify-content-center rounded" style="
     background-image: url('./assets/pleasework.jpg');
     background-size: cover;
@@ -54,20 +55,29 @@
                 </div>
             </div>
         </div>
+        <!-- Containers for restaurant and attraction -->
         <div class="container-lg">
             <div class="row">
                 <div class="col m-3 p-3 rounded text-center cards">
                     <h1 class="text-decoration-underline">Restaurant</h1>
-                    <img src="./assets/restfiller.webp" height="200px" width="300px" class="p-1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
-                    <p><a href="#">TripAdvisor Link</a></p>
+                    <!-- Photo ID for API will be retaurant-photo -->
+                    <img src="./assets/restfiller.webp" height="200px" width="300px" class="p-1" id="retaurant-photo">
+                    <!-- Description ID for API will be retaurant-description -->
+                    <p id="retaurant-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
+                    <!-- URL ID for API will be retaurant-url -->
+                    <p><a href="#" id="retaurant-url">TripAdvisor Link</a></p>
+                    <!-- We can use this to randomize a new selection from API -->
                     <button class="btn-lg">Try again</button>
                 </div>
                 <div class="col m-3 p-3 rounded text-center cards">
                     <h1 class="text-decoration-underline">Attraction</h1>
-                    <img src="./assets/attrfiller.jpeg" height="200px" width="300px" class="p-1">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
-                    <p><a href="#">TripAdvisor Link</a></p>
+                    <!-- Photo ID for API will be attraction-photo -->
+                    <img src="./assets/attrfiller.jpeg" height="200px" width="300px" class="p-1" id="attraction-photo">
+                    <!-- Description ID for API will be attraction-description -->
+                    <p id="attraction-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
+                    <!-- URL ID for API will be attraction-url -->
+                    <p><a href="#" id="attraction-url">TripAdvisor Link</a></p>
+                    <!-- We can use this to randomize a new selection from API -->
                     <button class="btn-lg">Try again</button>
                 </div>
             </div>
