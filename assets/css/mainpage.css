@@ -65,3 +65,48 @@ header a {
     color: #ffffff;
     text-shadow: 0 5px 10px black;
 }
+
+/* state styling */
+.slider .list .item .content .state {
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+/* styling for city and nickname */
+.slider .list .item .content .city,
+.slider .list .item .content .nickname {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+/* color change for city nicknames - may cycle this based on city */
+.slider .list .item .content .nickname {
+    color: rgb(0, 255, 170)
+}
+
+/* button styling */
+.slider .list .item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+/* left button - Day */
+.slider .list .item .content button {
+    border: none;
+    letter-spacing: 5px;
+    background-color: #eee;
+    font-weight: 600;
+}
+
+/* right button - Night  */
+/* adding secondary comment - not sure on how I like the Day - Night colors may flip after getting teams opinion */
+.slider .list .item .content button:nth-child(2) {
+    color: #eee;
+    background-color: transparent;
+    border: 1px solid #eee;
+    text-shadow: 0 5px 10px black;
+}
