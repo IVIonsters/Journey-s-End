@@ -30,3 +30,8 @@ body {
 .navy a{
   color: var(--clr-accent2);
 }
+
+.lightmode {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
