@@ -1,0 +1,41 @@
+:root {
+  --clr-dark: #222831;
+  --clr-light: whitesmoke;
+  --clr-accent1: #393E46;
+  --clr-accent2: #00ADB5;
+  --clr-accent3: #00FFF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.hero {
+  color: var(--clr-accent3);
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.cards {
+  background-color: var(--clr-accent2);
+  color: var(--clr-dark);
+}
+
+.navy a{
+  color: var(--clr-accent2);
+}
+
+.lightmode {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+.shadow{
+  text-shadow: 1px 1px 5px black;
+}
