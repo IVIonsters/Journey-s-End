@@ -22,7 +22,11 @@ body {
   margin-bottom: 25px;
 }
 
-.testing {
+.cards {
   background-color: var(--clr-accent2);
   color: var(--clr-dark);
+}
+
+.navy a{
+  color: var(--clr-accent2);
 }
