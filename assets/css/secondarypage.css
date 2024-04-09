@@ -1,23 +1,23 @@
 :root {
-    --clr-dark: #222831;
-    --clr-light: whitesmoke;
-    --clr-accent1: #393E46;
-    --clr-accent2: #00ADB5;
-    --clr-accent3: #00FFF5;
-  }
+  --clr-dark: #222831;
+  --clr-light: whitesmoke;
+  --clr-accent1: #393E46;
+  --clr-accent2: #00ADB5;
+  --clr-accent3: #00FFF5;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-  }
+body {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
 
-  .hero {
-    color: var(--clr-accent3);
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
+.hero {
+  color: var(--clr-accent3);
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
 }
