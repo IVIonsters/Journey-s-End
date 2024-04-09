@@ -35,3 +35,7 @@ body {
   background-color: var(--clr-light);
   color: var(--clr-dark);
 }
+
+.shadow{
+  text-shadow: 1px 1px 5px black;
+}
