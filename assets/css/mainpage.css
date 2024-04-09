@@ -110,3 +110,45 @@ header a {
     border: 1px solid #eee;
     text-shadow: 0 5px 10px black;
 }
+
+/* thumbnail */
+.thumbnail, .thumbnail .card, .thumbnail .card img {
+    background-color: transparent;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .card{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+    color: #eee;
+    text-shadow: 0 5px 10px black;
+}
+
+.thumbnail .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.thumbnail .card .content {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.thumbnail .card .content .title{
+    font-weight: bold;
+}
