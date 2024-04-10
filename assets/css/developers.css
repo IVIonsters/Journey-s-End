@@ -1,0 +1,16 @@
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1em;
+    background-color: var(--clr-accent2);
+    text-align: center;
+}
+.btn {
+    background-color: var(--clr-accent1);
+    color: var(--clr-light);
+}
