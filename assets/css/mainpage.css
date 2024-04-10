@@ -233,3 +233,129 @@ header a {
 .slider .list  .item:nth-child(1) .state{
     animation-delay: 2.5s;
 }
+
+/* setup for next button click animations */
+.slider.forward .list .item:nth-child(1) img{
+    height: 220px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: revealThumbnail .5s linear 1 forwards
+}
+
+/* keyframe to call above animation */
+@keyframes revealThumbnail{
+    to {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+/* animate last photo in thumbnail */
+.slider.forward .thumbnail .card:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+/* keyframe to call above animation */
+@keyframes showThumbnail{
+    to {
+        width: 150px;
+    }
+}
+
+.slider.forward .thumbnail{
+    transform: translateX(150px);
+    animation: translateThumbnail .5s linear 1 forwards;
+}
+
+@keyframes translateThumbnail{
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* backwards click button */
+.slider.back .list .card:nth-child(2){
+    z-index: 2;
+}
+
+.slider.back .list .card:nth-child(2) img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: outThumbnail .5s linear 1 forwards;
+}
+
+@keyframes outThumbnail{
+    to {
+        height: 220px;
+        width: 150px;
+        left: 50%;
+        bottom: 50px;
+        border-radius: 20px;
+    }
+}
+
+.slider.back .thumbnail .card:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+.slider .list  .item:nth-child(1) .state,
+.slider .list  .item:nth-child(1) .city,
+.slider .list  .item:nth-child(1) .nickname,
+.slider .list  .item:nth-child(1) .des,
+.slider .list  .item:nth-child(1) .buttons{
+    animation: contentOut .5s linear 1 forwards;
+}
+@keyframes contentOut{
+    to {
+        filter: blur(20px);
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+
+/* prevents multiple arrow click animation spam */
+.slider.back .arrows button,
+.slider.forward .arrows button{
+    pointer-events: none;
+}
+
+/* time styling control */
+.time{
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.slider.forward .time,
+.slider.back .time{
+    animation: timeAnimation 2s linear 1 forwards;
+}
+@keyframes timeAnimation{
+    to {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 728px){
+    .slider .list .item .content{
+        padding-right: 0;
+    }
+    .slider .list .item .content .city{
+        font-size : 2em;
+    }
+}
