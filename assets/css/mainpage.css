@@ -320,7 +320,7 @@ header a {
     to {
         filter: blur(20px);
         opacity: 0;
-        transform: translateY(-150px);
+        transform: translateY(150px);
     }
 }
 
