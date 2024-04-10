@@ -181,6 +181,7 @@ header a {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.25em;
     font-weight: bold;
+    z-index: 100;
     transition: .5s;
     text-shadow: 0 5px 10px black;
 }
@@ -189,4 +190,46 @@ header a {
 .slidearrow button:hover {
     background-color: rgb(238, 238, 238);
     color: #000;
+}
+
+.slider .list .item:nth-child(1) {
+    z-index: 1;
+}
+/* setup for content animation*/
+.slider .list  .item:nth-child(1) .state,
+.slider .list  .item:nth-child(1) .city,
+.slider .list  .item:nth-child(1) .nickname,
+.slider .list  .item:nth-child(1) .des,
+.slider .list  .item:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: revealContent .5s 1s linear 1 forwards;
+}
+
+/* keyframe animation call above animation / function */
+/* bring content from hidden 'to" revealed */
+@keyframes revealContent{
+    to{
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* animation delay to different text sections - POSSIBLY SLOW DOWN ANIMATION TIME*/
+.slider .list  .item:nth-child(1) .city{
+    animation-delay: 1.2s;
+}
+.slider .list  .item:nth-child(1) .nickname{
+    animation-delay: 1.6s;
+}
+.slider .list  .item:nth-child(1) .des{
+    animation-delay: 2.0s;
+}
+.slider .list  .item:nth-child(1) .buttons{
+    animation-delay: 2.2s;
+}
+.slider .list  .item:nth-child(1) .state{
+    animation-delay: 2.5s;
 }
