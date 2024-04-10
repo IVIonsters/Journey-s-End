@@ -1,3 +1,6 @@
+/* Add Google Fonts */
+@import url(./fonts.css);
+
 :root {
   --clr-dark: #222831;
   --clr-light: whitesmoke;
