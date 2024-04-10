@@ -32,7 +32,6 @@ header a {
 }
 
 /* slider styling */
-
 .slider {
     height: 100vh;
     width: 100vw;
@@ -116,6 +115,7 @@ header a {
     background-color: transparent;
 }
 
+/* thumbnail position */
 .thumbnail{
     position: absolute;
     bottom: 50px;
@@ -126,6 +126,7 @@ header a {
     gap: 20px;
 }
 
+/* thumbnail image sizing */
 .thumbnail .card{
     width: 150px;
     height: 220px;
@@ -135,13 +136,14 @@ header a {
     text-shadow: 0 5px 10px black;
 }
 
+/* thumbnail container sizing */
 .thumbnail .card img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
-
+/* thumbnail image inside container sizing */
 .thumbnail .card .content {
     position: absolute;
     left: 10px;
@@ -149,6 +151,7 @@ header a {
     right: 10px;
 }
 
+/* thumbnail image text styling */
 .thumbnail .card .content .title{
     font-weight: bold;
 }
@@ -165,6 +168,7 @@ header a {
     gap: 8px;
 }
 
+/* slider arrow button styling */
 .slidearrow button {
     height: 50px;
     width: 50px;
@@ -176,8 +180,10 @@ header a {
     font-size: 1.25em;
     font-weight: bold;
     transition: .5s;
+    text-shadow: 0 5px 10px black;
 }
 
+/* arrows hover effect */
 .slidearrow button:hover {
     background-color: rgb(238, 238, 238);
     color: #000;
