@@ -152,3 +152,33 @@ header a {
 .thumbnail .card .content .title{
     font-weight: bold;
 }
+
+/* card slider buttons */
+.slidearrow {
+    position: absolute;
+    align-items: center;
+    right: 50%;
+    top: 80%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 8px;
+}
+
+.slidearrow button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(238, 238, 238, 0.377);
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.slidearrow button:hover {
+    background-color: rgb(238, 238, 238);
+    color: #000;
+}
