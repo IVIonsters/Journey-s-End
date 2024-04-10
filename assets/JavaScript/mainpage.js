@@ -13,7 +13,8 @@ backButton.onclick = function() {
 }
 
 let animationTime = 3000;
-let animationTimeOut;
+let animationAutoRun = 7000;
+
 
 function moveSlider(type) {
     let sliderItems = document.querySelectorAll('.slider .list .item');
@@ -26,10 +27,18 @@ function moveSlider(type) {
     } else {
         let positionLastThumbnail = thumbnailItems.length - 1;
         listDOM.prepend(sliderItems[positionLastThumbnail]);
+        thumbnails.prepend(thumbnailItems[positionLastThumbnail]);
+        sliderDOM.classList.add('back');
     }
 
     clearTimeout(animationTimeOut);
     animationTimeOut = setTimeout(() => {
         sliderDOM.classList.remove('forward');
+        sliderDOM.classList.remove('back');
     }, animationTime);
+
+    clearTimeout(autoRun);
+    autoRun = setTimeout(() => {
+        moveSlider('forward');
+    }, animationAutoRun);
 }
