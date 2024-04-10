@@ -1,12 +1,12 @@
 .cards-wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
     margin: 1em;
-    width: calc(100%/3);
     background-color: var(--clr-accent2);
     text-align: center;
 }
