@@ -1,67 +1,55 @@
-// set variables here
-const htmlEl = document.getElementById("stanley");
-const phillyBig = document.getElementById("big-philly");
-const tampaBig = document.getElementById("big-tampa");
-const miamiBig = document.getElementById("big-miami");
-const pittBig = document.getElementById("big-pitt");
-const atlantaBig = document.getElementById("big-atlanta");
 
-const phiDayBtn = document.getElementById("philly-AM");
-const phinightBtn = document.getElementById("philly-PM");
-const tamDayBtn = document.getElementById("tampa-AM");
-const tamnightBtn = document.getElementById("tampa-PM");
-const miaDayBtn = document.getElementById("miami-AM");
-const mianightBtn = document.getElementById("miami-PM");
-const pitDayBtn = document.getElementById("pitt-AM");
-const pitnightBtn = document.getElementById("pitt-PM");
-const atlDayBtn = document.getElementById("atlanta-AM");
-const atlnightBtn = document.getElementById("atlanta-PM");
+let nextArrow = document.getElementById('next');
+let previousArrow = document.getElementById('previous');
 
-// const dayButtons = [phiDayBtn, tamDayBtn, miaDayBtn, pitDayBtn, atlDayBtn]
-// const nightButtons = [phinightBtn, tamnightBtn, mianightBtn, pitnightBtn, atlnightBtn]
+let slider1 = document.querySelector('.slider');
+let slider2 = slider1.querySelector('.slider .list');
+let thumbnail1 = document.querySelector('.slider .thumbnail');
+let thumbnail2 = thumbnail1.querySelectorAll('.item');
+let time1 = document.querySelector('.slider .time');
 
-function sunrise() {
-    // e.preventDefault();
-    //set light mode
-    htmlEl.removeAttribute("data-bs-theme");
-     //set img src=light
-    phillyBig.setAttribute("src", "./assets/images/philly-light.png");
-    tampaBig.setAttribute("src", "./assets/images/tampa-light.png");
-    miamiBig.setAttribute("src", "./assets/images/miami-light1.png");
-    pittBig.setAttribute("src", "./assets/images/pitt-light.png");
-    atlantaBig.setAttribute("src", "./assets/images/atlanta-light.png");
-};
+thumbnail1.appendChild(thumbnail2[0]);
+let animationRunning = 3000;
+let autoRun = 7000;
 
-function sunset() {
-    // event.preventDefault();
-    //set dark mode
-    htmlEl.setAttribute("data-bs-theme", "dark");
-    //set img src=dark
-    phillyBig.setAttribute("src", "./assets/images/philly-dark.png");
-    tampaBig.setAttribute("src", "./assets/images/tampa-dark.png");
-    miamiBig.setAttribute("src", "./assets/images/miami-dark1.png");
-    pittBig.setAttribute("src", "./assets/images/pitt-dark.png");
-    atlantaBig.setAttribute("src", "./assets/images/atlanta-dark.png");
-};
+nextArrow.onclick = function(){
+    showSlider('next');    
+}
 
-// for (let i = 0; i < dayButtons.length; i++) {
-//     const dayBtn = dayButtons[i];
-//     dayBtn.addEventListener("click", sunrise())
-// };
+previousArrow.onclick = function(){
+    showSlider('previous');    
+}
 
-// for (let i = 0; i < nightButtons.length; i++) {
-//     const nightBtn = nightButtons[i];
-//     nightBtn.addEventListener("click", sunset())
-// };
+// comment this line to stop auto run
 
-phiDayBtn.addEventListener("click", sunrise);
-tamDayBtn.addEventListener("click", sunrise);
-miaDayBtn.addEventListener("click", sunrise);
-pitDayBtn.addEventListener("click", sunrise);
-atlDayBtn.addEventListener("click", sunrise);
 
-phinightBtn.addEventListener("click", sunset);
-tamnightBtn.addEventListener("click", sunset);
-mianightBtn.addEventListener("click", sunset);
-pitnightBtn.addEventListener("click", sunset);
-atlnightBtn.addEventListener("click", sunset);
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, autoRun)
+
+
+function showSlider(type){
+    let  SliderItemsDom = slider2.querySelectorAll('.slider .list .item');
+    let thumbnail2 = document.querySelectorAll('.slider .thumbnail .item');
+    
+    if(type === 'next'){
+        slider2.appendChild(SliderItemsDom[0]);
+        thumbnail1.appendChild(thumbnail2[0]);
+        slider1.classList.add('next');
+    }else{
+        slider2.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnail1.prepend(thumbnail2[thumbnail2.length - 1]);
+        slider1.classList.add('previous');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        slider1.classList.remove('next');
+        slider1.classList.remove('previous');
+    }, animationRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, autoRun)
+}
