@@ -1,7 +1,3 @@
-// Weather API variables
-const cardWeather = document.querySelector(".cardWeather");
-
-
 
 // Light / Dark Mode top right of page
 let lightMode = "no";
@@ -26,5 +22,3 @@ const enableLightMode = () => {
 const disableLightMode = () => {
     document.body.classList.remove("lightmode");
 }
-
-// Weather API
