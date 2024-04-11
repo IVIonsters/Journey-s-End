@@ -79,8 +79,14 @@ const displayResults = function () {
 
   let erosEvents = JSON.parse(localStorage.getItem("erosEvents")) || [];
 
+  let text =""
+
   // Strategy >> loop through list of events/attractions/suggestions
-  console.log(erosEvents.page._embedded)
+  
+  for (events of erosEvents._embedded.events) {
+    text += events;
+    console.log(text);
+  }
 
 
 }
