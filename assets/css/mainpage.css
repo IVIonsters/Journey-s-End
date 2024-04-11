@@ -58,7 +58,7 @@ header a{
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
+    color: rgb(206, 206, 206);
     text-shadow: 0 5px 10px #0004;
 }
 
