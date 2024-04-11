@@ -1,6 +1,5 @@
-let forwardButton = document.getElementById('forward');
-let backButton = document.getElementById('backward');
-
+let nextArrow = document.getElementById('next');
+let previousArrow = document.getElementById('previous');
 
 let slider1 = document.querySelector('.slider');
 let slider2 = slider1.querySelector('.slider .list');
@@ -9,43 +8,41 @@ let thumbnail2 = thumbnail1.querySelectorAll('.item');
 let time1 = document.querySelector('.slider .time');
 
 thumbnail1.appendChild(thumbnail2[0]);
-let animationRunning = 3000;
+let animationRunning = 1000;
 let autoRun = 7000;
 
-forwardButton.onclick = function(){
-    revealSlider('forward');    
+nextArrow.onclick = function(){
+    showSlider('next');    
 }
 
-backButton.onclick = function(){
-    revealSlider('backward');    
+previousArrow.onclick = function(){
+    showSlider('previous');    
 }
-
-let animationTimeOut;
-let autoRunNext = setTimeout(() => {
-    forwardButton.click();
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
 }, autoRun)
-
-function revealSlider(type){
-    let  slider2 = slider1.querySelectorAll('.slider .list .item');
+function showSlider(type){
+    let  SliderItemsDom = slider2.querySelectorAll('.slider .list .item');
     let thumbnail2 = document.querySelectorAll('.slider .thumbnail .item');
     
-    if(type === 'forward'){
-        slider1.appendChild(slider2[0]);
+    if(type === 'next'){
+        slider2.appendChild(SliderItemsDom[0]);
         thumbnail1.appendChild(thumbnail2[0]);
-        slider1.classList.add('forward');
+        slider1.classList.add('next');
     }else{
-        slider1.prepend(slider2[slider2.length - 1]);
+        slider2.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
         thumbnail1.prepend(thumbnail2[thumbnail2.length - 1]);
-        slider1.classList.add('backward');
+        slider1.classList.add('previous');
     }
-    clearTimeout(animationTimeOut);
-    animationTimeOut = setTimeout(() => {
-        slider1.classList.remove('forward');
-        slider1.classList.remove('backward');
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        slider1.classList.remove('next');
+        slider1.classList.remove('previous');
     }, animationRunning);
 
-    clearTimeout(autoRunNext);
-    autoRunNext = setTimeout(() => {
-        forwardButton.click();
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
     }, autoRun)
-} 
+}

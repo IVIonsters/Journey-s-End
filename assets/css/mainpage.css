@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-/* Add Google Fonts */
-@import url(./fonts.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Main Body Styling */
 body{
     margin: 0;
     background-color: #000;
     color: #eee;
-    font-family: 'Exo 2', sans-serif;
+    font-family: Poppins;
     font-size: 12px;
 }
 
@@ -31,6 +28,7 @@ header a{
     color: #eee;
     margin-right: 40px;
 }
+
 /* slider styling */
 .slider{
     height: 100vh;
@@ -80,7 +78,7 @@ header a{
 
 /* color change for city nicknames - may cycle this based on city */
 .slider .list .item .nickname{
-    color: rgb(0, 255, 170)
+    color: rgb(0, 255, 170);
 }
 
 /* button styling */
@@ -91,18 +89,21 @@ header a{
     gap: 5px;
     margin-top: 20px;
 }
+
 .slider .list .item .buttons button{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: Poppins;
     font-weight: 500;
 }
+
 .slider .list .item .buttons button:nth-child(2){
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
 }
+
 /* thumbnail */
 .thumbnail{
     position: absolute;
@@ -141,11 +142,13 @@ header a{
 .thumbnail .item .content .city{
     font-weight: 500;
 }
+
 .thumbnail .item .content .description{
     font-weight: 300;
 }
-/* card slider buttons */
-.slidearrow{
+
+/* arrowIcon */
+.arrowIcon{
     position: absolute;
     top: 80%;
     right: 52%;
@@ -158,7 +161,7 @@ header a{
 }
 
 /* arrow button styling */
-.slidearrow button{
+.arrowIcon button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -171,7 +174,7 @@ header a{
 }
 
 /* arrow hover effect */
-.slidearrow button:hover{
+.arrowIcon button:hover{
     background-color: #fff;
     color: #000;
 }
@@ -181,7 +184,7 @@ header a{
     z-index: 1;
 }
 
-/* setup for content animation*/
+/* setup for content animation */
 .slider .list .item:nth-child(1) .content .state,
 .slider .list .item:nth-child(1) .content .city,
 .slider .list .item:nth-child(1) .content .nickname,
@@ -193,6 +196,7 @@ header a{
     opacity: 0;
     animation: revealContent .5s 1s linear 1 forwards;
 }
+
 /* keyframe animation call above animation / function */
 /* bring content from hidden 'to" revealed */
 @keyframes revealContent{
@@ -239,7 +243,7 @@ header a{
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
 }
-.slider.prev .list .item img{
+.slider.previous .list .item img{
     z-index: 100;
 }
 
@@ -272,7 +276,7 @@ header a{
 }
 
 .slider.next .time,
-.slider.prev .time{
+.slider.previous .time{
     animation: runningTime 3s linear 1 forwards;
 }
 @keyframes runningTime{
@@ -282,12 +286,11 @@ header a{
 
 
 /* prev click */
-
-.slider.prev .list .item:nth-child(2){
+.slider.previous .list .item:nth-child(2){
     z-index: 2;
 }
 
-.slider.prev .list .item:nth-child(2) img{
+.slider.previous .list .item:nth-child(2) img{
     animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
@@ -303,20 +306,20 @@ header a{
     }
 }
 
-.slider.prev .thumbnail .item:nth-child(1){
+.slider.previous .thumbnail .item:nth-child(1){
     overflow: hidden;
     opacity: 0;
     animation: showThumbnail .5s linear 1 forwards;
 }
-.slider.next .arrows button,
-.slider.prev .arrows button{
+.slider.next .arrowIcon button,
+.slider.previous .arrowIcon button{
     pointer-events: none;
 }
-.slider.prev .list .item:nth-child(2) .content .state,
-.slider.prev .list .item:nth-child(2) .content .city,
-.slider.prev .list .item:nth-child(2) .content .nickname,
-.slider.prev .list .item:nth-child(2) .content .des,
-.slider.prev .list .item:nth-child(2) .content .buttons
+.slider.previous .list .item:nth-child(2) .content .state,
+.slider.previous .list .item:nth-child(2) .content .city,
+.slider.previous .list .item:nth-child(2) .content .nickname,
+.slider.previous .list .item:nth-child(2) .content .des,
+.slider.previous .list .item:nth-child(2) .content .buttons
 {
     animation: contentOut 1.5s linear 1 forwards!important;
 }
@@ -328,6 +331,8 @@ header a{
         opacity: 0;
     }
 }
+
+/* media query for smaller screens - may need to adjust after testing */
 @media screen and (max-width: 678px) {
     .slider .list .item .content{
         padding-right: 0;
