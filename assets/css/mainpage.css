@@ -2,25 +2,24 @@
 /* Add Google Fonts */
 @import url(./fonts.css);
 
-/* Main body Styling */
-body {
-    font-family: 'Exo 2', sans-serif;
+/* Main Body Styling */
+body{
     margin: 0;
-    font-size: 20px;
     background-color: #000;
     color: #eee;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
 }
 
 /* a tag styling */
-a {
-    color: #eee;
+a{
     text-decoration: none;
 }
 
-/* Header Styling */
-header {
-    max-width: 80%;
+/* header styling */
+header{
     width: 1140px;
+    max-width: 80%;
     margin: auto;
     height: 50px;
     display: flex;
@@ -28,96 +27,83 @@ header {
     position: relative;
     z-index: 100;
 }
-
-header a {
+header a{
+    color: #eee;
     margin-right: 40px;
 }
-
 /* slider styling */
-.slider {
+.slider{
     height: 100vh;
+    margin-top: -50px;
     width: 100vw;
     overflow: hidden;
-    margin-top: -50px;
     position: relative;
 }
-
-.slider .list .item {
+.slider .list .item{
+    width: 100%;
+    height: 100%;
     position: absolute;
     inset: 0 0 0 0;
 }
-
-.slider .list .item img {
-    height: 100%;
+.slider .list .item img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-
 /* text styling in slider */
-.slider .list .item .content {
+.slider .list .item .content{
     position: absolute;
     top: 20%;
-    max-width: 80%;
     width: 1140px;
+    max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #ffffff;
-    text-shadow: 0 5px 10px black;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
 }
 
 /* state styling */
-.slider .list .item .content .state {
-    letter-spacing: 5px;
+.slider .list .item .state{
     font-weight: bold;
+    letter-spacing: 10px;
 }
 
 /* styling for city and nickname */
-.slider .list .item .content .city,
-.slider .list .item .content .nickname {
-    font-size: 4em;
+.slider .list .item .city,
+.slider .list .item .nickname{
+    font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 
 /* color change for city nicknames - may cycle this based on city */
-.slider .list .item .content .nickname {
+.slider .list .item .nickname{
     color: rgb(0, 255, 170)
 }
 
 /* button styling */
-.slider .list .item .content .buttons {
+.slider .list .item .buttons{
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
-    margin-top: 15px;
-    gap: 10px;
+    gap: 5px;
+    margin-top: 20px;
 }
-
-/* left button - Day */
-.slider .list .item .content button {
+.slider .list .item .buttons button{
     border: none;
-    letter-spacing: 5px;
     background-color: #eee;
-    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
 }
-
-/* right button - Night  */
-/* adding secondary comment - not sure on how I like the Day - Night colors may flip after getting teams opinion */
-.slider .list .item .content button:nth-child(2) {
+.slider .list .item .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
     color: #eee;
-    background-color: transparent;
-    border: 1px solid #eee;
-    text-shadow: 0 5px 10px black;
 }
-
 /* thumbnail */
-.thumbnail, .thumbnail .card, .thumbnail .card img {
-    background-color: transparent;
-}
-
-/* thumbnail position */
 .thumbnail{
     position: absolute;
     bottom: 50px;
@@ -129,233 +115,224 @@ header a {
 }
 
 /* thumbnail image sizing */
-.thumbnail .card{
+.thumbnail .item{
     width: 150px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
-    color: #eee;
-    text-shadow: 0 5px 10px black;
 }
 
 /* thumbnail container sizing */
-.thumbnail .card img{
-    height: 100%;
+.thumbnail .item img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* thumbnail image inside container sizing */
-.thumbnail .card .content {
+.thumbnail .item .content{
+    color: #fff;
     position: absolute;
-    left: 10px;
     bottom: 10px;
+    left: 10px;
     right: 10px;
 }
-
-/* thumbnail image text styling */
-.thumbnail .card .content .title{
-    font-weight: bold;
+.thumbnail .item .content .city{
+    font-weight: 500;
 }
-
+.thumbnail .item .content .description{
+    font-weight: 300;
+}
 /* card slider buttons */
-.slidearrow {
+.slidearrow{
     position: absolute;
-    align-items: center;
-    right: 50%;
     top: 80%;
+    right: 52%;
+    z-index: 100;
     width: 300px;
     max-width: 30%;
     display: flex;
-    gap: 8px;
+    gap: 10px;
+    align-items: center;
 }
 
-/* slider arrow button styling */
-.slidearrow button {
-    height: 50px;
-    width: 50px;
+/* arrow button styling */
+.slidearrow button{
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background-color: #eee4;
     border: none;
-    background-color: rgba(238, 238, 238, 0.377);
-    color: #ffffff;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 1.25em;
+    color: #fff;
+    font-family: monospace;
     font-weight: bold;
-    z-index: 100;
     transition: .5s;
-    text-shadow: 0 5px 10px black;
 }
 
-/* arrows hover effect */
-.slidearrow button:hover {
-    background-color: rgb(238, 238, 238);
+/* arrow hover effect */
+.slidearrow button:hover{
+    background-color: #fff;
     color: #000;
 }
 
-.slider .list .item:nth-child(1) {
+/* animation */
+.slider .list .item:nth-child(1){
     z-index: 1;
 }
+
 /* setup for content animation*/
-.slider .list  .item:nth-child(1) .state,
-.slider .list  .item:nth-child(1) .city,
-.slider .list  .item:nth-child(1) .nickname,
-.slider .list  .item:nth-child(1) .des,
-.slider .list  .item:nth-child(1) .buttons{
+.slider .list .item:nth-child(1) .content .state,
+.slider .list .item:nth-child(1) .content .city,
+.slider .list .item:nth-child(1) .content .nickname,
+.slider .list .item:nth-child(1) .content .des,
+.slider .list .item:nth-child(1) .content .buttons
+{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
     animation: revealContent .5s 1s linear 1 forwards;
 }
-
 /* keyframe animation call above animation / function */
 /* bring content from hidden 'to" revealed */
 @keyframes revealContent{
     to{
-        filter: blur(0);
+        transform: translateY(0px);
+        filter: blur(0px);
         opacity: 1;
-        transform: translateY(0);
     }
 }
-
-/* animation delay to different text sections - POSSIBLY SLOW DOWN ANIMATION TIME*/
-.slider .list  .item:nth-child(1) .city{
-    animation-delay: 1.2s;
+.slider .list .item:nth-child(1) .content .city{
+    animation-delay: 1.2s!important;
 }
-.slider .list  .item:nth-child(1) .nickname{
-    animation-delay: 1.6s;
+.slider .list .item:nth-child(1) .content .nickname{
+    animation-delay: 1.6s!important;
 }
-.slider .list  .item:nth-child(1) .des{
-    animation-delay: 2.0s;
+.slider .list .item:nth-child(1) .content .des{
+    animation-delay: 2.0s!important;
 }
-.slider .list  .item:nth-child(1) .buttons{
-    animation-delay: 2.2s;
+.slider .list .item:nth-child(1) .content .buttons{
+    animation-delay: 2.2s!important;
 }
-.slider .list  .item:nth-child(1) .state{
-    animation-delay: 2.5s;
-}
-
 /* setup for next button click animations */
-.slider.forward .list .item:nth-child(1) img{
-    height: 220px;
+.slider.next .list .item:nth-child(1) img{
     width: 150px;
+    height: 220px;
     position: absolute;
-    left: 50%;
     bottom: 50px;
-    border-radius: 20px;
-    animation: revealThumbnail .5s linear 1 forwards
+    left: 50%;
+    border-radius: 30px;
+    animation: revealThumbnail .5s linear 1 forwards;
 }
-
-/* keyframe to call above animation */
 @keyframes revealThumbnail{
-    to {
-        height: 100%;
-        width: 100%;
-        left: 0;
+    to{
         bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         border-radius: 0;
     }
 }
 
 /* animate last photo in thumbnail */
-.slider.forward .thumbnail .card:nth-child(1){
-    width: 0;
+.slider.next .thumbnail .item:nth-last-child(1){
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
+}
+.slider.prev .list .item img{
+    z-index: 100;
 }
 
 /* keyframe to call above animation */
 @keyframes showThumbnail{
-    to {
-        width: 150px;
+    from{
+        width: 0;
+        opacity: 0;
     }
 }
-
-.slider.forward .thumbnail{
-    transform: translateX(150px);
+.slider.next .thumbnail{
     animation: translateThumbnail .5s linear 1 forwards;
 }
 
 @keyframes translateThumbnail{
-    to {
-        transform: translateX(0);
+    from{
+        transform: translateX(150px);
     }
 }
 
-/* backwards click button */
-.slider.back .list .card:nth-child(2){
+/*  time styling control */
+.slider .time{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+}
+
+.slider.next .time,
+.slider.prev .time{
+    animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime{
+    from{ width: 100%}
+    to{width: 0}
+}
+
+
+/* prev click */
+
+.slider.prev .list .item:nth-child(2){
     z-index: 2;
 }
 
-.slider.back .list .card:nth-child(2) img{
+.slider.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
-    left: 0;
     bottom: 0;
-    animation: outThumbnail .5s linear 1 forwards;
+    left: 0;
 }
-
-@keyframes outThumbnail{
-    to {
-        height: 220px;
+@keyframes outFrame{
+    to{
         width: 150px;
-        left: 50%;
+        height: 220px;
         bottom: 50px;
+        left: 50%;
         border-radius: 20px;
     }
 }
 
-.slider.back .thumbnail .card:nth-child(1){
-    width: 0;
+.slider.prev .thumbnail .item:nth-child(1){
     overflow: hidden;
+    opacity: 0;
     animation: showThumbnail .5s linear 1 forwards;
 }
-
-.slider .list  .item:nth-child(1) .state,
-.slider .list  .item:nth-child(1) .city,
-.slider .list  .item:nth-child(1) .nickname,
-.slider .list  .item:nth-child(1) .des,
-.slider .list  .item:nth-child(1) .buttons{
-    animation: contentOut .5s linear 1 forwards;
-}
-@keyframes contentOut{
-    to {
-        filter: blur(20px);
-        opacity: 0;
-        transform: translateY(-150px);
-    }
-}
-
-/* prevents multiple arrow click animation spam */
-.slider.back .arrows button,
-.slider.forward .arrows button{
+.slider.next .arrows button,
+.slider.prev .arrows button{
     pointer-events: none;
 }
-
-/* time styling control */
-.time{
-    position: absolute;
-    width: 0%;
-    height: 5px;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background-color: #fff;
+.slider.prev .list .item:nth-child(2) .content .state,
+.slider.prev .list .item:nth-child(2) .content .city,
+.slider.prev .list .item:nth-child(2) .content .nickname,
+.slider.prev .list .item:nth-child(2) .content .des,
+.slider.prev .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
 }
 
-.slider.forward .time,
-.slider.back .time{
-    animation: timeAnimation 2s linear 1 forwards;
-}
-@keyframes timeAnimation{
-    to {
-        width: 0;
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
     }
 }
-
-@media screen and (max-width: 728px){
+@media screen and (max-width: 678px) {
     .slider .list .item .content{
         padding-right: 0;
     }
     .slider .list .item .content .city{
-        font-size : 2em;
+        font-size: 30px;
     }
 }

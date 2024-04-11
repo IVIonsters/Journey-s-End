@@ -1,44 +1,51 @@
 let forwardButton = document.getElementById('forward');
-let backButton = document.getElementById('back');
-let sliderDOM = document.querySelector('.slider');
-let listDOM = document.querySelector('.slider .list');
-let thumbnails = document.querySelector('.slider .thumbnail');
+let backButton = document.getElementById('backward');
 
-forwardButton.onclick = function() {
-    moveSlider('forward');
+
+let slider1 = document.querySelector('.slider');
+let slider2 = slider1.querySelector('.slider .list');
+let thumbnail1 = document.querySelector('.slider .thumbnail');
+let thumbnail2 = thumbnail1.querySelectorAll('.item');
+let time1 = document.querySelector('.slider .time');
+
+thumbnail1.appendChild(thumbnail2[0]);
+let animationRunning = 3000;
+let autoRun = 7000;
+
+forwardButton.onclick = function(){
+    revealSlider('forward');    
 }
 
-backButton.onclick = function() {
-    moveSlider('back');
+backButton.onclick = function(){
+    revealSlider('backward');    
 }
 
-let animationTime = 3000;
-let animationAutoRun = 7000;
+let animationTimeOut;
+let autoRunNext = setTimeout(() => {
+    forwardButton.click();
+}, autoRun)
 
-
-function moveSlider(type) {
-    let sliderItems = document.querySelectorAll('.slider .list .item');
-    let thumbnailItems = document.querySelectorAll('.slider .thumbnail .card');
-
-    if (type === 'forward') {
-        listDOM.appendChild(sliderItems[0]);
-        thumbnails.appendChild(thumbnailItems[0]);
-        sliderDOM.classList.add('forward');
-    } else {
-        let positionLastThumbnail = thumbnailItems.length - 1;
-        listDOM.prepend(sliderItems[positionLastThumbnail]);
-        thumbnails.prepend(thumbnailItems[positionLastThumbnail]);
-        sliderDOM.classList.add('back');
+function revealSlider(type){
+    let  slider2 = slider1.querySelectorAll('.slider .list .item');
+    let thumbnail2 = document.querySelectorAll('.slider .thumbnail .item');
+    
+    if(type === 'forward'){
+        slider1.appendChild(slider2[0]);
+        thumbnail1.appendChild(thumbnail2[0]);
+        slider1.classList.add('forward');
+    }else{
+        slider1.prepend(slider2[slider2.length - 1]);
+        thumbnail1.prepend(thumbnail2[thumbnail2.length - 1]);
+        slider1.classList.add('backward');
     }
-
     clearTimeout(animationTimeOut);
     animationTimeOut = setTimeout(() => {
-        sliderDOM.classList.remove('forward');
-        sliderDOM.classList.remove('back');
-    }, animationTime);
+        slider1.classList.remove('forward');
+        slider1.classList.remove('backward');
+    }, animationRunning);
 
-    clearTimeout(autoRun);
-    autoRun = setTimeout(() => {
-        moveSlider('forward');
-    }, animationAutoRun);
-}
+    clearTimeout(autoRunNext);
+    autoRunNext = setTimeout(() => {
+        forwardButton.click();
+    }, autoRun)
+} 
