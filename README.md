@@ -1,17 +1,20 @@
-# PROJECT REPO TITLE HERE
+# Journeys End || Lets Enjoy The Journey
 
-## Table of Contents
-
-* [Description](#description)
-* [Languages](#languages)
-* [Features](#features)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)  
-
+<details>
+<summary>Table of Contents</summary>
+    <ul>
+        <li><a href="#description">Description</li>
+        <li><a href="#languages">languages</li>
+        <li><a href="#features">Features</li>
+        <li><a href="#usage">Usage</li>
+        <li><a href="#credits">Credits</li>
+        <li><a href="#license">License</li>
+    </ul>
+</details>
 
 ## Description
-    INSERT PROJECT DESCRIPTION HERE MAHNNNNNNN
+    Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
+    While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
 ## Languages
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -20,20 +23,18 @@
 
 ## Features
 
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-* **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE BRUH --- IT IS THE WAY BRUH
-
-## Usage
+* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+* **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
+* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
 
 * EXPLAIN GENERAL DESIGN USAGE
 
-* [LIVE PROJECT LINK HERE](https://ivionsters.github.io/IVIonsters-Designs-Blog/)
+* [Journeys End Live Link](https://ivionsters.github.io/Journeys-End/)
 
-* [REPO LINK GOES HERE](https://github.com/IVIonsters/IVIonsters-Designs-Blog)
+* [Journeys End Repo Link](https://github.com/IVIonsters/Journeys-End)
 
 * ![SCREENSHOTS GO HERE](./assets/refimages/lightmodemain.png)
 * ![SCRENSHOTS HERE](./assets/refimages/lightmodeblog.png)
