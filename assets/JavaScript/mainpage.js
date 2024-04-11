@@ -1,3 +1,4 @@
+
 let nextArrow = document.getElementById('next');
 let previousArrow = document.getElementById('previous');
 
