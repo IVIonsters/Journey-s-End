@@ -8,7 +8,7 @@ let thumbnail2 = thumbnail1.querySelectorAll('.item');
 let time1 = document.querySelector('.slider .time');
 
 thumbnail1.appendChild(thumbnail2[0]);
-let animationRunning = 1000;
+let animationRunning = 3000;
 let autoRun = 7000;
 
 nextArrow.onclick = function(){
@@ -18,10 +18,16 @@ nextArrow.onclick = function(){
 previousArrow.onclick = function(){
     showSlider('previous');    
 }
+
+// comment this line to stop auto run
+
+
 let runTimeOut;
 let runNextAuto = setTimeout(() => {
     next.click();
 }, autoRun)
+
+
 function showSlider(type){
     let  SliderItemsDom = slider2.querySelectorAll('.slider .list .item');
     let thumbnail2 = document.querySelectorAll('.slider .thumbnail .item');

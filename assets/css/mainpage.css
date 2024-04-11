@@ -65,7 +65,9 @@ header a{
 /* state styling */
 .slider .list .item .state{
     font-weight: bold;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
+    font-size: 2em;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 /* styling for city and nickname */
@@ -73,7 +75,17 @@ header a{
 .slider .list .item .nickname{
     font-size: 5em;
     font-weight: bold;
+    letter-spacing: 5px;
     line-height: 1.3em;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.slider .list .item .des {
+    font-size: 1.5em;
+    font-weight: 300; 
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
+    color: #fff;
+    -webkit-text-stroke: .15px #0000001f;
 }
 
 /* color change for city nicknames - may cycle this based on city */
@@ -145,6 +157,7 @@ header a{
 
 .thumbnail .item .content .description{
     font-weight: 300;
+    color: rgb(0, 255, 170);
 }
 
 /* arrowIcon */
@@ -270,7 +283,7 @@ header a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color: rgb(0, 255, 170);
     left: 0;
     top: 0;
 }
