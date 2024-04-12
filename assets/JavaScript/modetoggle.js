@@ -32,12 +32,12 @@ function sunrise() {
      //set img src=light
     phillyBig.setAttribute("src", "./assets/images/philly-light.png");
     tampaBig.setAttribute("src", "./assets/images/tampa-light.png");
-    miamiBig.setAttribute("src", "./assets/images/miami-light1.png");
+    miamiBig.setAttribute("src", "./assets/images/miami-light2.png");
     pittBig.setAttribute("src", "./assets/images/pitt-light.png");
     atlantaBig.setAttribute("src", "./assets/images/atlanta-light.png");
     phillySmol.setAttribute("src", "./assets/images/philly-light.png");
     tampaSmol.setAttribute("src", "./assets/images/tampa-light.png");
-    miamiSmol.setAttribute("src", "./assets/images/miami-light1.png");
+    miamiSmol.setAttribute("src", "./assets/images/miami-light2.png");
     pittSmol.setAttribute("src", "./assets/images/pitt-light.png");
     atlantaSmol.setAttribute("src", "./assets/images/atlanta-light.png");
 };
@@ -49,12 +49,12 @@ function sunset() {
     //set img src=dark
     phillyBig.setAttribute("src", "./assets/images/philly-dark.png");
     tampaBig.setAttribute("src", "./assets/images/tampa-dark.png");
-    miamiBig.setAttribute("src", "./assets/images/miami-dark1.png");
+    miamiBig.setAttribute("src", "./assets/images/miami-dark2.png");
     pittBig.setAttribute("src", "./assets/images/pitt-dark.png");
     atlantaBig.setAttribute("src", "./assets/images/atlanta-dark.png");
     phillySmol.setAttribute("src", "./assets/images/philly-dark.png");
     tampaSmol.setAttribute("src", "./assets/images/tampa-dark.png");
-    miamiSmol.setAttribute("src", "./assets/images/miami-dark1.png");
+    miamiSmol.setAttribute("src", "./assets/images/miami-dark2.png");
     pittSmol.setAttribute("src", "./assets/images/pitt-dark.png");
     atlantaSmol.setAttribute("src", "./assets/images/atlanta-dark.png");
 
