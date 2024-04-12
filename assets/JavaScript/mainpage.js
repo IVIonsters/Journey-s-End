@@ -10,7 +10,7 @@ let time1 = document.querySelector('.slider .time');
 
 thumbnail1.appendChild(thumbnail2[0]);
 let animationRunning = 3000;
-let autoRun = 10000;
+let autoRun = 100000;
 
 nextArrow.onclick = function(){
     showSlider('next');    
@@ -53,3 +53,5 @@ function showSlider(type){
         next.click();
     }, autoRun)
 }
+
+
