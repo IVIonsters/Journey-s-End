@@ -13,7 +13,7 @@
 }
 
 /* Main Body Styling */
-body{
+body {
     margin: 0;
     background-color: #000;
     color: #E9F2FF;
@@ -22,12 +22,12 @@ body{
 }
 
 /* a tag styling */
-a{
+a {
     text-decoration: none;
 }
 
 /* header styling */
-header{
+header {
     width: 1140px;
     max-width: 80%;
     margin: auto;
@@ -37,7 +37,7 @@ header{
     position: relative;
     z-index: 100;
 }
-header a{
+header a {
     color: #E9F2FF;
     margin-right: 40px;
     font-family: Castoro Titling;
@@ -47,14 +47,14 @@ header a{
 }
 
 /* slider styling */
-.slider{
+.slider {
     height: 100vh;
     margin-top: -50px;
     width: 100vw;
     overflow: hidden;
     position: relative;
 }
-.slider .list .item{
+.slider .list .item {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -62,13 +62,13 @@ header a{
     
 }
 
-.slider .list .item img{
+.slider .list .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 /* text styling in slider */
-.slider .list .item .content{
+.slider .list .item .content {
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -82,7 +82,7 @@ header a{
 }
 
 /* state styling */
-.slider .list .item .state{
+.slider .list .item .state {
     font-weight: 400;
     letter-spacing: 12px;
     font-size: 1.5em;
@@ -91,7 +91,7 @@ header a{
 }
 
 /* styling for city and nickname */
-.slider .list .item .city{
+.slider .list .item .city {
     font-size: 5em;
     font-weight: 700;
     letter-spacing: 8px;
@@ -100,7 +100,7 @@ header a{
     text-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
-.slider .list .item .nickname{
+.slider .list .item .nickname {
     font-size: 3.5em;
     font-weight: 700;
     letter-spacing: 8px;
@@ -120,19 +120,19 @@ header a{
 .slider .list .item .city,
 .slider .list .item .nickname,
 .slider .list .item .state,
-.slider .list .item .des{
+.slider .list .item .des {
     background-color: hsla(0, 0%, 0%, 0.356);
     border-radius: 5px;
     padding-left: 20px;
 }
 
 /* color change for city nicknames - may cycle this based on city */
-.slider .list .item .nickname{
+.slider .list .item .nickname {
     color: #FBC4AD;
 }
 
 /* button styling */
-.slider .list .item .buttons{
+.slider .list .item .buttons {
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
@@ -140,7 +140,7 @@ header a{
     margin-top: 20px;
 }
 
-.slider .list .item .buttons button{
+.slider .list .item .buttons button {
     border: none;
     background-color: #E9F2FF;
     letter-spacing: 3px;
@@ -149,14 +149,14 @@ header a{
     font-size: 1.25em;
 }
 
-.slider .list .item .buttons button:nth-child(2){
+.slider .list .item .buttons button:nth-child(2) {
     background-color: transparent;
     border: 1px solid #fff;
     color: #E9F2FF;
 }
 
 /* thumbnail */
-.thumbnail{
+.thumbnail {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -167,7 +167,7 @@ header a{
 }
 
 /* thumbnail image sizing */
-.thumbnail .item{
+.thumbnail .item {
     width: 150px;
     height: 220px;
     flex-shrink: 0;
@@ -175,7 +175,7 @@ header a{
 }
 
 /* thumbnail container sizing */
-.thumbnail .item img{
+.thumbnail .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -183,19 +183,19 @@ header a{
 }
 
 /* thumbnail image inside container sizing */
-.thumbnail .item .content{
+.thumbnail .item .content {
     color: #fff;
     position: absolute;
     bottom: 10px;
     left: 10px;
     right: 10px;
 }
-.thumbnail .item .content .city{
+.thumbnail .item .content .city {
     font-weight: 500;
     font-size: 1.5em;
 }
 
-.thumbnail .item .content .description{
+.thumbnail .item .content .description {
     font-weight: 300;
     color: #FBC4AD;
     font-weight: bold;
@@ -203,7 +203,7 @@ header a{
 }
 
 /* arrowIcon */
-.arrowIcon{
+.arrowIcon {
     position: absolute;
     top: 80%;
     right: 52%;
@@ -216,7 +216,7 @@ header a{
 }
 
 /* arrow button styling */
-.arrowIcon button{
+.arrowIcon button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -229,13 +229,13 @@ header a{
 }
 
 /* arrow hover effect */
-.arrowIcon button:hover{
+.arrowIcon button:hover {
     background-color: #fff;
     color: #000;
 }
 
 /* animation */
-.slider .list .item:nth-child(1){
+.slider .list .item:nth-child(1) {
     z-index: 1;
 }
 
@@ -254,27 +254,27 @@ header a{
 
 /* keyframe animation call above animation / function */
 /* bring content from hidden 'to" revealed */
-@keyframes revealContent{
+@keyframes revealContent {
     to{
         transform: translateY(0px);
         filter: blur(0px);
         opacity: 1;
     }
 }
-.slider .list .item:nth-child(1) .content .city{
+.slider .list .item:nth-child(1) .content .city {
     animation-delay: 1.2s!important;
 }
-.slider .list .item:nth-child(1) .content .nickname{
+.slider .list .item:nth-child(1) .content .nickname {
     animation-delay: 1.6s!important;
 }
-.slider .list .item:nth-child(1) .content .des{
+.slider .list .item:nth-child(1) .content .des {
     animation-delay: 2.0s!important;
 }
-.slider .list .item:nth-child(1) .content .buttons{
+.slider .list .item:nth-child(1) .content .buttons {
     animation-delay: 2.2s!important;
 }
 /* setup for next button click animations */
-.slider.next .list .item:nth-child(1) img{
+.slider.next .list .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -283,7 +283,7 @@ header a{
     border-radius: 30px;
     animation: revealThumbnail .5s linear 1 forwards;
 }
-@keyframes revealThumbnail{
+@keyframes revealThumbnail {
     to{
         bottom: 0;
         left: 0;
@@ -294,33 +294,33 @@ header a{
 }
 
 /* animate last photo in thumbnail */
-.slider.next .thumbnail .item:nth-last-child(1){
+.slider.next .thumbnail .item:nth-last-child(1) {
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
 }
-.slider.previous .list .item img{
+.slider.previous .list .item img {
     z-index: 100;
 }
 
 /* keyframe to call above animation */
-@keyframes showThumbnail{
-    from{
+@keyframes showThumbnail {
+    from {
         width: 0;
         opacity: 0;
     }
 }
-.slider.next .thumbnail{
+.slider.next .thumbnail {
     animation: translateThumbnail .5s linear 1 forwards;
 }
 
-@keyframes translateThumbnail{
-    from{
+@keyframes translateThumbnail {
+    from {
         transform: translateX(150px);
     }
 }
 
 /*  time styling control */
-.slider .time{
+.slider .time {
     position: absolute;
     z-index: 1000;
     width: 0%;
@@ -331,27 +331,27 @@ header a{
 }
 
 .slider.next .time,
-.slider.previous .time{
+.slider.previous .time {
     animation: runningTime 3s linear 1 forwards;
 }
-@keyframes runningTime{
-    from{ width: 100%}
-    to{width: 0}
+@keyframes runningTime {
+    from {width: 100%}
+    to {width: 0}
 }
 
 
 /* prev click */
-.slider.previous .list .item:nth-child(2){
+.slider.previous .list .item:nth-child(2) {
     z-index: 2;
 }
 
-.slider.previous .list .item:nth-child(2) img{
+.slider.previous .list .item:nth-child(2) img {
     animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-@keyframes outFrame{
+@keyframes outFrame {
     to{
         width: 150px;
         height: 220px;
@@ -361,13 +361,13 @@ header a{
     }
 }
 
-.slider.previous .thumbnail .item:nth-child(1){
+.slider.previous .thumbnail .item:nth-child(1) {
     overflow: hidden;
     opacity: 0;
     animation: showThumbnail .5s linear 1 forwards;
 }
 .slider.next .arrowIcon button,
-.slider.previous .arrowIcon button{
+.slider.previous .arrowIcon button {
     pointer-events: none;
 }
 .slider.previous .list .item:nth-child(2) .content .state,
@@ -379,8 +379,8 @@ header a{
     animation: contentOut 1.5s linear 1 forwards!important;
 }
 
-@keyframes contentOut{
-    to{
+@keyframes contentOut {
+    to {
         transform: translateY(-150px);
         filter: blur(20px);
         opacity: 0;
@@ -389,10 +389,10 @@ header a{
 
 /* media query for smaller screens - may need to adjust after testing */
 @media screen and (max-width: 678px) {
-    .slider .list .item .content{
+    .slider .list .item .content {
         padding-right: 0;
     }
-    .slider .list .item .content .city{
+    .slider .list .item .content .city {
         font-size: 30px;
     }
 }
