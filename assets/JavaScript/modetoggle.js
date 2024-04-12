@@ -1,10 +1,15 @@
 // set variables here
 const htmlEl = document.getElementById("stanley");
 const phillyBig = document.getElementById("big-philly");
+const phillySmol = document.getElementById("lil-philly");
 const tampaBig = document.getElementById("big-tampa");
+const tampaSmol = document.getElementById("lil-tampa");
 const miamiBig = document.getElementById("big-miami");
+const miamiSmol = document.getElementById("lil-miami");
 const pittBig = document.getElementById("big-pitt");
+const pittSmol = document.getElementById("lil-pitt");
 const atlantaBig = document.getElementById("big-atlanta");
+const atlantaSmol = document.getElementById("lil-atlanta");
 
 const phiDayBtn = document.getElementById("philly-AM");
 const phinightBtn = document.getElementById("philly-PM");
@@ -30,6 +35,11 @@ function sunrise() {
     miamiBig.setAttribute("src", "./assets/images/miami-light1.png");
     pittBig.setAttribute("src", "./assets/images/pitt-light.png");
     atlantaBig.setAttribute("src", "./assets/images/atlanta-light.png");
+    phillySmol.setAttribute("src", "./assets/images/philly-light.png");
+    tampaSmol.setAttribute("src", "./assets/images/tampa-light.png");
+    miamiSmol.setAttribute("src", "./assets/images/miami-light1.png");
+    pittSmol.setAttribute("src", "./assets/images/pitt-light.png");
+    atlantaSmol.setAttribute("src", "./assets/images/atlanta-light.png");
 };
 
 function sunset() {
@@ -42,8 +52,15 @@ function sunset() {
     miamiBig.setAttribute("src", "./assets/images/miami-dark1.png");
     pittBig.setAttribute("src", "./assets/images/pitt-dark.png");
     atlantaBig.setAttribute("src", "./assets/images/atlanta-dark.png");
+    phillySmol.setAttribute("src", "./assets/images/philly-dark.png");
+    tampaSmol.setAttribute("src", "./assets/images/tampa-dark.png");
+    miamiSmol.setAttribute("src", "./assets/images/miami-dark1.png");
+    pittSmol.setAttribute("src", "./assets/images/pitt-dark.png");
+    atlantaSmol.setAttribute("src", "./assets/images/atlanta-dark.png");
+
 };
 
+//early attempt at refactoring code... commented out for later reconsideration:
 // for (let i = 0; i < dayButtons.length; i++) {
 //     const dayBtn = dayButtons[i];
 //     dayBtn.addEventListener("click", sunrise())
