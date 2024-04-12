@@ -8,7 +8,15 @@ async function getWeather(city){
     const apiData = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`);
     var data = await apiData.json();
     console.log(data);
+    // document.querySelector(".city").innerHTML = data.name;
+    document.getElementById("today").innerHTML = (Math.round((data.list[0].main.temp-273.15)*1.8+32)) +'°F';
+    document.getElementById("day-1").innerHTML = (Math.round((data.list[8].main.temp-273.15)*1.8+32)) +'°F';
+    document.getElementById("day-2").innerHTML = (Math.round((data.list[16].main.temp-273.15)*1.8+32)) +'°F';
+    document.getElementById("day-3").innerHTML = (Math.round((data.list[24].main.temp-273.15)*1.8+32)) +'°F';
+    document.getElementById("day-4").innerHTML = (Math.round((data.list[32].main.temp-273.15)*1.8+32)) +'°F';
 }
+
+
 
 // document.querySelector(".city").innerHTML = data.name;
 // document.querySelector(".temp").innerHTML = (Math.round((data.main.temp-273.15)*1.8+32)) +'°F';
