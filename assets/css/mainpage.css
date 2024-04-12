@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Shrikhand&display=swap');
 
+/* Root Setup for light and dark mode colors */
+:root {
+    --darkmain: #E9F2FF;
+    --darksecond: #FBC4AD;
+    --lightstate: #1F3340;
+    --lightcity:    #FBC4AD;
+    --lightnickname: #E9F2FF;
+}
 
 /* Main Body Styling */
 body{
