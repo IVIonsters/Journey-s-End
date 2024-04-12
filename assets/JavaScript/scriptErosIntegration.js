@@ -1,51 +1,4 @@
 
-// Select the nav links
-const tampaLink = document.getElementById('tampa');
-
-// Add event listeners to the nav links and set city value in local storage
-tampaLink.addEventListener('click', function() {
-
-localStorage.setItem('city', JSON.stringify('tampa'))
-
-});
-
-
-const displayResults = function () {
-  // Retrieve the array from localStorage
-  const erosFindsArray = JSON.parse(localStorage.getItem('erosPicks')) || [];
-
-  // Get the container where you want to append the <p> elements
-  const container = document.getElementById('erosFinds-container');
-
-  // Function to replace <p> elements
-  const replaceElements = () => {
-    // Clear existing <p> elements in the container
-    container.innerHTML = '';
-
-    // Loop through the array and create new <p> elements
-    erosFindsArray.forEach(item => {
-      // Create a new <p> element
-      const pElement = document.createElement('p');
-
-      // Set the text content of the <p> element to the current item
-      pElement.textContent = item;
-
-      // Append the <p> element to the container
-      container.appendChild(pElement);
-    });
-  };
-
-  // Initial display of results
-  replaceElements();
-
-  // Get the "tryAgain" button element
-  const tryAgainButton = document.getElementById('tryAgain');
-
-  // Add event listener to the "tryAgain" button to replace elements on click
-  tryAgainButton.addEventListener('click', replaceElements);
-};
-
-//   retrieve data from ticketmaster.com API (currently set to enter city name in field)
 const getSuggestions = function () {
 
   let cityData = localStorage.getItem('city');
@@ -81,6 +34,7 @@ const getSuggestions = function () {
     prepareResults();
   }, 1500); // 1500 milliseconds = 1.5 seconds
 };
+
 
 //   prepare resutls > strategy => parse each localStorage array for names and compile master list for looping and randomizing result output
 const prepareResults = function () {
@@ -145,7 +99,7 @@ const prepareResults = function () {
   // Save the updated erosFinds array back to localStorage
   localStorage.setItem('erosFinds', JSON.stringify(erosFinds));
   randomizeErosFinds();
-  displayResults();
+  generateResults();
 };
 
 // randomize results and select only 3
@@ -171,4 +125,57 @@ const randomizeErosFinds = function () {
   localStorage.setItem('erosPicks', JSON.stringify(erosPicks));
 
 };
+
+const generateResults = function () {
+
+// Retrieve the array from localStorage
+const erosFindsArray = JSON.parse(localStorage.getItem('erosPicks')) || [];
+
+erosFindsArray.forEach(item => {
+
+  
+
+   // Event data array
+   const eventData = [
+
+    {
+        title: item,
+        imageSrc: "./assets/images/restfiller.webp",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.",
+        url: "#"
+    },
+
+  ];
+  
+  // Get the container element to append the dynamically created HTML
+  const container = document.querySelector('.container-lg .row');
+  
+  // Loop through the event data array and create HTML for each event
+  eventData.forEach((event, index) => {
+    const eventHtml = `
+        <div class="col m-3 p-3 rounded text-center cards">
+            <h1 class="text-decoration-underline">${event.title}</h1>
+            <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
+            <p id="event${index + 1}-description">${event.description}</p>
+            <p><a href="${event.url}" id="event${index + 1}-url">TripAdvisor Link</a></p>
+            <button class="btn-lg">Try again</button>
+        </div
+        `;
+  
+    // Append the dynamically created event HTML to the container
+    container.insertAdjacentHTML('beforeend', eventHtml);
+  });
+
+})
+
+};
+
+// fire off getSuggestions
+getSuggestions();
+
+
+ 
+  
+
+
 
