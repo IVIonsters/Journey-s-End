@@ -32,19 +32,29 @@ header {
     max-width: 80%;
     margin: auto;
     height: 50px;
-    display: flex;
-    align-items: center;
     position: relative;
     z-index: 100;
 }
 /* header text styling */
-header a {
-    color: #E9F2FF;
+header nav {
     margin-right: 40px;
     font-family: Castoro Titling;
     font-weight: bold;
     font-size: 1.5em;
     text-shadow: 0 5px 10px #0004;
+}
+
+
+/* header text link styling */
+.nav-link {
+    color: var(--darkmain);
+    transition: .5s;
+}
+/* header text hover styling */
+.nav-link:hover {
+    color: var(--lightstate);
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 /* slider styling */
