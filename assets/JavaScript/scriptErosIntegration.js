@@ -11,23 +11,17 @@ const getSuggestions = function () {
 
   fetch(`https://app.ticketmaster.com/discovery/v2/events.json?&city=${city}&apikey=PX9R1m9GGLoYMZnyzl7zDQT2EZJyjBqX`, requestOptions)
     .then(response => response.json())
-    // store response in local storage
     .then(response => localStorage.setItem('erosEvents', JSON.stringify(response)))
-    // error handling (basic)
     .catch(err => console.error(err));
 
   fetch(`https://app.ticketmaster.com/discovery/v2/attractions.json?&keyword=${city}&apikey=PX9R1m9GGLoYMZnyzl7zDQT2EZJyjBqX`, requestOptions)
     .then(response => response.json())
-    // store response in local storage
     .then(response => localStorage.setItem('erosAttractions', JSON.stringify(response)))
-    // error handling (basic)
     .catch(err => console.error(err));
 
   fetch(`https://app.ticketmaster.com/discovery/v2/suggest.json?&keyword=${city}&apikey=PX9R1m9GGLoYMZnyzl7zDQT2EZJyjBqX`, requestOptions)
     .then(response => response.json())
-    // store response in local storage
     .then(response => localStorage.setItem('erosSuggest', JSON.stringify(response)))
-    // error handling (basic)
     .catch(err => console.error(err));
 
   setTimeout(() => {
@@ -39,67 +33,49 @@ const getSuggestions = function () {
 //   prepare resutls > strategy => parse each localStorage array for names and compile master list for looping and randomizing result output
 const prepareResults = function () {
 
-  // erosEvents push to erosFinds (new array composed of events/attractions/suggests)
-  // set the eventDataString by pulling erosEvents in local storage
-  const eventsDataString = localStorage.getItem('erosEvents');
-
-  // parse the data and set to new constant 'eventData'
-  const eventsData = JSON.parse(eventsDataString);
-
-  // set the events data by pulling object .events from the array erosEvents data
-  const events = eventsData._embedded.events;
-
-  // Initialize erosFinds array as empty array
-  let erosFinds = [];
-
-  // Use forEach loop to pull all event names
-  events.forEach(event => {
-    let eventNames = JSON.stringify(event.name);
-
-    // Append each event name to the erosFinds array
-    erosFinds.push(eventNames);
+  // erosEvents
+  const erosEvents = JSON.parse(localStorage.getItem('erosEvents'));
+  const erosFinds = [];
+  erosEvents._embedded.events.forEach(event => {
+      const name = event.name;
+      // const startDate = event.dates.start.localDate;
+      const imageUrl = event.images[0].url; 
+      const ticketingUrl = event.url;
+  
+      // Push extracted data to erosFinds array
+      erosFinds.push({ name, imageUrl, ticketingUrl });
   });
 
-  // erosAttractions push to erosFinds (new array composed of events/attractions/suggests)
-  // set the eventDataString by pulling erosEvents in local storage
-  const attractionDataString = localStorage.getItem('erosAttractions');
+  // erosAttractions
+  const erosAttractions = JSON.parse(localStorage.getItem('erosAttractions'));
+  erosAttractions._embedded.attractions.forEach(attraction => {
 
-  // parse the data and set to new constant 'eventData'
-  const attractionData = JSON.parse(attractionDataString);
+    const name = attraction.name;
+    const imageUrl = attraction.images[0].url;
+    const ticketingUrl = attraction.url; 
 
-  // set the events data by pulling object .events from the array erosEvents data
-  const attractions = attractionData._embedded.attractions;
+    erosFinds.push({ name, imageUrl, ticketingUrl});
+  })
 
-  // Use forEach loop to pull all event names
-  attractions.forEach(attraction => {
-    let attractionNames = JSON.stringify(attraction.name);
+  // erosSuggest
+  const erosSuggest = JSON.parse(localStorage.getItem('erosSuggest'));
+  erosSuggest._embedded.attractions.forEach(suggest => {
 
-    // Append each event name to the erosFinds array
-    erosFinds.push(attractionNames);
-  });
+    const name = suggest.name;
+    const imageUrl = suggest.images[0].url;
+    const ticketingUrl = suggest.url; 
 
-  // erosSuggest push to erosFinds (new array composed of events/attractions/suggests)
-  // set the eventDataString by pulling erosEvents in local storage
-  const suggestDataString = localStorage.getItem('erosSuggest');
+    erosFinds.push({ name, imageUrl, ticketingUrl});
 
-  // parse the data and set to new constant 'eventData'
-  const suggestionData = JSON.parse(suggestDataString);
+  })
 
-  // set the events data by pulling object .events from the array erosEvents data
-  const suggestion = suggestionData._embedded.attractions;
 
-  // Use forEach loop to pull all event names
-  suggestion.forEach(attraction => {
-    let suggestionNames = JSON.stringify(attraction.name);
-
-    // Append each event name to the erosFinds array
-    erosFinds.push(suggestionNames);
-  });
-
+  
   // Save the updated erosFinds array back to localStorage
   localStorage.setItem('erosFinds', JSON.stringify(erosFinds));
   randomizeErosFinds();
   generateResults();
+
 };
 
 // randomize results and select only 3
@@ -133,16 +109,13 @@ const erosFindsArray = JSON.parse(localStorage.getItem('erosPicks')) || [];
 
 erosFindsArray.forEach(item => {
 
-  
-
    // Event data array
    const eventData = [
 
     {
-        title: item,
-        imageSrc: "./assets/images/restfiller.webp",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.",
-        url: "#"
+        title: item.name,
+        imageSrc: item.imageUrl,
+        url: item.ticketingUrl
     },
 
   ];
@@ -156,9 +129,7 @@ erosFindsArray.forEach(item => {
         <div class="col m-3 p-3 rounded text-center cards">
             <h1 class="text-decoration-underline">${event.title}</h1>
             <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
-            <p id="event${index + 1}-description">${event.description}</p>
-            <p><a href="${event.url}" id="event${index + 1}-url">TripAdvisor Link</a></p>
-            <button class="btn-lg">Try again</button>
+            <p><a href="${event.url}" id="event${index + 1}-url">Link to Event!</a></p>
         </div
         `;
   
