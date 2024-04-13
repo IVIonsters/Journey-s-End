@@ -103,43 +103,57 @@ const randomizeErosFinds = function () {
 };
 
 const generateResults = function () {
-
-// Retrieve the array from localStorage
-const erosFindsArray = JSON.parse(localStorage.getItem('erosPicks')) || [];
-
-erosFindsArray.forEach(item => {
-
-   // Event data array
-   const eventData = [
-
-    {
-        title: item.name,
-        imageSrc: item.imageUrl,
-        url: item.ticketingUrl
-    },
-
-  ];
-  
-  // Get the container element to append the dynamically created HTML
+  // Retrieve the array from localStorage
+  const erosFindsArray = JSON.parse(localStorage.getItem('erosPicks')) || [];
   const container = document.querySelector('.container-lg .row');
-  
-  // Loop through the event data array and create HTML for each event
-  eventData.forEach((event, index) => {
-    const eventHtml = `
-        <div class="col m-3 p-3 rounded text-center cards">
-            <h1 class="text-decoration-underline">${event.title}</h1>
-            <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
-            <p><a href="${event.url}" id="event${index + 1}-url">Link to Event!</a></p>
-        </div
-        `;
-  
-    // Append the dynamically created event HTML to the container
-    container.insertAdjacentHTML('beforeend', eventHtml);
+
+  // Function to generate the HTML for each event
+  const generateEventHtml = (event, index) => {
+      return `
+          <div class="col m-3 p-3 rounded text-center cards">
+              <h1 class="text-decoration-underline">${event.title}</h1>
+              <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
+              <p><a href="${event.url}" id="event${index + 1}-url">Link to Event!</a></p>
+          </div>
+      `;
+  };
+
+  // Function to clear the existing content in the container
+  const clearResults = () => {
+      container.innerHTML = '';
+  };
+
+  // Function to generate new results
+  const generateNewResults = () => {
+      clearResults();
+      erosFindsArray.forEach((item, index) => {
+          const eventData = [
+              {
+                  title: item.name,
+                  imageSrc: item.imageUrl,
+                  url: item.ticketingUrl
+              }
+          ];
+
+          eventData.forEach((event, index) => {
+              const eventHtml = generateEventHtml(event, index);
+              container.insertAdjacentHTML('beforeend', eventHtml);
+          });
+      });
+  };
+
+  // Initial generation of results
+  generateNewResults();
+
+  // Add an event listener to the "Try Again" button
+  const tryAgainButton = document.getElementById('tryAgain');
+  tryAgainButton.addEventListener('click', function() {
+
+      prepareResults();
+      generateNewResults();
   });
-
-})
-
 };
+
 
 // fire off getSuggestions
 getSuggestions();
