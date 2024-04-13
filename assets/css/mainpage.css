@@ -37,18 +37,17 @@ header {
 }
 /* header text styling */
 header nav {
-    margin-right: 40px;
     font-family: Castoro Titling;
     font-weight: bold;
     font-size: 1.5em;
     text-shadow: 0 5px 10px #0004;
 }
 
-
 /* header text link styling */
 .nav-link {
     color: var(--darkmain);
     transition: .5s;
+    margin-right: 30px;
 }
 /* header text hover styling */
 .nav-link:hover {
@@ -417,4 +416,21 @@ header nav {
     .slider .list .item .content .city {
         font-size: 30px;
     }
+    header nav {
+        font-size: 1.25em;
+    }
 }
+
+
+/* - [ ]  media query break points
+    - [ ]  mobile - 320px - 480px
+    - [ ]  tablets - 481px-768px
+    - [ ]  laptops - 769px - 1024px
+    - [ ]  large - 1025px - 1200px
+    - [ ]  oversized monitors -1201px - 1440px
+    - [ ]  ultrawides - 1441px - 1960px
+- [ ]  Iphone se 375 x 667 - doesn’t fit
+- [ ]  Iphone 12 390 x 844 doesn’t fiit
+- [ ]  galaxy s8  360 x 740 doesn’t fit
+- [ ]  surface duo 540 x 730 doesn’t fit
+- [ ]  galaxy fold 280 x 653 doesn’t fit */
