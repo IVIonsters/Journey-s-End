@@ -157,18 +157,20 @@ header nav {
 /* day button styling */
 .slider .list .item .buttons button {
     border: none;
-    background-color: #E9F2FF;
+    background-color: #e9f2ffbe;
     letter-spacing: 3px;
     font-family: Castoro Titling;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.25em;
+    color: #000;
+    border: 1px solid #e9f2ffbe;
 }
 
 /* night button styling */
 .slider .list .item .buttons button:nth-child(2) {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #E9F2FF;
+    background-color: #0000007a;
+    border: 1px solid #000000be;
+    color: #fff;
 }
 
 /* thumbnail */
