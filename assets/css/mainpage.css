@@ -52,7 +52,7 @@ header nav {
 }
 /* header text hover styling */
 .nav-link:hover {
-    color: var(--lightstate);
+    color: var(--darksecond);
     transition: .5s;
     transform: scale(1.1);
 }
@@ -96,14 +96,14 @@ header nav {
 .slider .list .item .state {
     font-weight: 400;
     letter-spacing: 12px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-family: Shrikhand;
     text-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 /* styling for city and nickname */
 .slider .list .item .city {
-    font-size: 5em;
+    font-size: 9em;
     font-weight: 700;
     letter-spacing: 8px;
     line-height: 1em;
@@ -113,7 +113,7 @@ header nav {
 
 /* nickname styling in slider */
 .slider .list .item .nickname {
-    font-size: 3.5em;
+    font-size: 4.5em;
     font-weight: 700;
     letter-spacing: 8px;
     line-height: 1em;
@@ -123,20 +123,17 @@ header nav {
 
 /* description styling in slider */
 .slider .list .item .des {
-    font-size: 1.5em;
+    font-size: 2.2em;
     font-weight: 300; 
-    text-shadow: 0 5px 10px rgb(0, 0, 0);
-    color: #E9F2FF;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    color: #ffffff;
     letter-spacing: 1.5px;
 }
 
 /* container behind slider  */
-.slider .list .item .city,
-.slider .list .item .nickname,
-.slider .list .item .state,
 .slider .list .item .des {
-    background-color: hsla(0, 0%, 0%, 0.356);
-    border-radius: 5px;
+    background-color: hsla(0, 0%, 0%, 0.521);
+    border-radius: 20px;
     padding-left: 20px;
 }
 
@@ -234,12 +231,13 @@ header nav {
     display: flex;
     gap: 10px;
     align-items: center;
+    font-size: 2em;
 }
 
 /* arrow button styling */
 .arrowIcon button {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.69);
     border: none;
