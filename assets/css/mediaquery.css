@@ -1,0 +1,79 @@
+/* media query for smaller screens - may need to adjust after testing */
+@media screen and (max-width: 480px) {
+    header nav {
+        font-size: .75em;
+    }
+    .nav-link {
+        margin-right: 10px;
+    }
+    .slider .list .item .content .city {
+        font-size: 20px;
+    }
+    .slider .list .item .buttons {
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 20px;
+        margin-top: 20px;
+    }
+    .slider .list .item .des {
+        font-size: 1.25em;
+        letter-spacing: 1.3px;
+    }
+
+}
+    /* day button styling */
+    .slider .list .item .buttons button {
+        letter-spacing: 3px;
+        font-size: 1em;
+    }
+
+@media screen and (max-width: 768px) {
+    .slider .list .item .content {
+        padding-right: 0;
+    }
+    .slider .list .item .content .city {
+        font-size: 30px;
+    }
+    header nav {
+        font-size: 1.25em;
+    }
+    .thumbnail .item {
+        width: 170px;
+        height: 250px;
+    }
+}
+
+/* Media query for larger screens  */
+@media screen and (min-width: 2000px) {
+    header nav {
+        font-size: 3em;
+        letter-spacing: 1.6px;
+    }
+    .nav-link {
+        margin-right: 40px;
+    }
+    .slider .list .item .content {
+        padding-right: 500px;
+    }
+    .slider .list .item .content .city {
+        font-size: 70px;
+    }
+    .slider .list .item .buttons {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 60px;
+        gap: 10px;
+    }
+    .slider .list .item .des {
+        font-size: 2.8em;
+        letter-spacing: 1.3px;
+    }
+}
+
+
+
+/* - [ ]  media query break points
+    - [ ]  mobile - 320px - 480px
+    - [ ]  tablets - 481px-768px
+    - [ ]  laptops - 769px - 1024px
+    - [ ]  large - 1025px - 1200px
+    - [ ]  oversized monitors -1201px - 1440px
+    - [ ]  ultrawide - 1441px - 1960px
