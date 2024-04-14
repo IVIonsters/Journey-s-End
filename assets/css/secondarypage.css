@@ -36,12 +36,6 @@ body {
   font-style: normal;
   font-weight: 100;
 }
-
-.container-lg {
-  object-fit: cover !important;
-  overflow: hidden !important;
-}
-
 .navy a {
   color: var(--clr-accent2);
 }
