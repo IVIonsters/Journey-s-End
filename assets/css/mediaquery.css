@@ -1,6 +1,5 @@
 /* media query for smaller screens - may need to adjust after testing */
-
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 480px) {
     header nav {
         font-size: .75em;
     }
@@ -19,12 +18,7 @@
         font-size: 1.25em;
         letter-spacing: 1.3px;
     }
-    .thumbnail .item {
-        width: 230px;
-        height: 300px;
-        flex-shrink: 0;
-        position: relative;
-    }
+
 }
     /* day button styling */
     .slider .list .item .buttons button {
@@ -32,7 +26,7 @@
         font-size: 1em;
     }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
     .slider .list .item .content {
         padding-right: 0;
     }
@@ -49,6 +43,30 @@
 }
 
 /* Media query for larger screens  */
+@media screen and (min-width: 2000px) {
+    header nav {
+        font-size: 3em;
+        letter-spacing: 1.6px;
+    }
+    .nav-link {
+        margin-right: 40px;
+    }
+    .slider .list .item .content {
+        padding-right: 500px;
+    }
+    .slider .list .item .content .city {
+        font-size: 70px;
+    }
+    .slider .list .item .buttons {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 60px;
+        gap: 10px;
+    }
+    .slider .list .item .des {
+        font-size: 2.8em;
+        letter-spacing: 1.3px;
+    }
+}
 
 
 
@@ -59,6 +77,3 @@
     - [ ]  large - 1025px - 1200px
     - [ ]  oversized monitors -1201px - 1440px
     - [ ]  ultrawide - 1441px - 1960px
-- [ ]  Iphone se 375 x 667 - doesn’t fit
-- [ ]  galaxy s8  360 x 740 doesn’t fit
-- [ ]  galaxy fold 280 x 653 doesn’t fit */
