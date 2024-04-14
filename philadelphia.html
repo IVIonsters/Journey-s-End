@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
+        <!-- secondarypage CSS -->
+        <link rel="stylesheet" href="./assets/css/secondarypage.css">
+        <link rel="stylesheet" href="./assets/css/weather.css">
+        <title>Date Night Results!</title>
+    </head>
+    <body>
+        <!-- Joe's work with adding a nav bar -->
+        <!-- I want to figure out how to make the nav bar transparent -->
+        <header id="header">
+            <nav class="navbar navbar-expand-sm sticky-top navy">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        Journey's End
+                        <!-- <img src="./assets/datenight.jpg" height="60px" width="60px"> -->
+                    </a>
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="developers.html">Our Developers</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="mode">
+                                Toggle Dark Mode
+                                <i class="bi bi-brightness-high-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- We could insert a logo image if we want or just use the name the name coudld be clickable for the home page if we don't want any links -->
+        <a href="#" class="navbar-brand mb-0 h1"></a>
+        <!-- Joe's work complete -->
+        <!-- Want to make text stand out a bit more over the images, not sure best way to make that happen, tried background and it didnt look good -->
+        <div class="container-lg">
+            <div class="p-3 m-3 text-center bg-image align-items-center justify-content-center rounded" style="
+    background-image: url('./assets/images/philly-dark.png');
+    background-size: cover;
+    background-position: 100%;
+    height: 400px;
+  ">
+                <div class="mask">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3 mt-5 pt-5">Philadelphia</h1>
+                            <h4 class="mb-3 mt-3 pt-3">
+                                Known as the birthplace of American democracy, affectionately dubbed the 'City of Brotherly, it boasts a rich cultural tapestry, diverse culinary scene, and vibrant nightlife.
+                            </h4>
+                            <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Containers for restaurant and attraction -->
+        <div class="container-lg">
+            <div class="row">
+                <div class="col m-3 p-3 rounded text-center cards">
+                    <h1 class="text-decoration-underline">Event 1</h1>
+                    <!-- Photo ID for API will be retaurant-photo -->
+                    <img
+                        src="./assets/images/restfiller.webp"
+                        height="200px"
+                        width="300px"
+                        class="p-1"
+                        id="event1-photo"
+                    >
+                    <!-- Description ID for API will be retaurant-description -->
+                    <p id="event1-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
+                    <!-- URL ID for API will be retaurant-url -->
+                    <p>
+                        <a href="#" id="event1-url">TripAdvisor Link</a>
+                    </p>
+                    <!-- We can use this to randomize a new selection from API -->
+                    <button class="btn-lg">Try again</button>
+                </div>
+                <div class="col m-3 p-3 rounded text-center cards">
+                    <h1 class="text-decoration-underline">Event 2</h1>
+                    <!-- Photo ID for API will be attraction-photo -->
+                    <img
+                        src="./assets/images/attrfiller.jpeg"
+                        height="200px"
+                        width="300px"
+                        class="p-1"
+                        id="event2-photo"
+                    >
+                    <!-- Description ID for API will be attraction-description -->
+                    <p id="event2-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
+                    <!-- URL ID for API will be attraction-url -->
+                    <p>
+                        <a href="#" id="event2-url">TripAdvisor Link</a>
+                    </p>
+                    <!-- We can use this to randomize a new selection from API -->
+                    <button class="btn-lg">Try again</button>
+                </div>
+                <div class="col m-3 p-3 rounded text-center cards">
+                    <h1 class="text-decoration-underline">Event 3</h1>
+                    <!-- Photo ID for API will be retaurant-photo -->
+                    <img
+                        src="./assets/images/restfiller.webp"
+                        height="200px"
+                        width="300px"
+                        class="p-1"
+                        id="event3-photo"
+                    >
+                    <!-- Description ID for API will be retaurant-description -->
+                    <p id="event3-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
+                    <!-- URL ID for API will be retaurant-url -->
+                    <p>
+                        <a href="#" id="event3-url">TripAdvisor Link</a>
+                    </p>
+                    <!-- We can use this to randomize a new selection from API -->
+                    <button class="btn-lg">Try again</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col rounded text-center cards">
+                    <h1 class="text-decoration-underline">5 Day Forecast</h1>
+                    <!-- Photo ID for API will be retaurant-photo -->
+                    <div class="page-content page-container" id="page-content">
+                        <div class="padding">
+                            <div class="row container d-flex justify-content-center">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <!--weather card-->
+                                    <div class="card card-weather">
+                                        <div class="card-body">
+                                            <div class="weather-date-location">
+                                                <h3>Friday</h3>
+                                                <p class="text-gray">
+                                                    <span class="weather-date">25 March, 2019</span>
+                                                    <span class="weather-location" id="cityforweather"></span>
+                                                </p>
+                                            </div>
+                                            <div class="weather-data d-flex">
+                                                <div class="mr-auto">
+                                                    <h4 class="display-3" id="today"></h4>
+                                                    <p>
+                                                        Cloudy
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="d-flex weakly-weather">
+                                                <div class="weakly-weather-item">
+                                                    <p class="mb-0">
+                                                        Sun
+                                                    </p>
+                                                    <i class="mdi mdi-weather-cloudy"></i>
+                                                    <p class="mb-0" id="day-1"></p>
+                                                </div>
+                                                <div class="weakly-weather-item">
+                                                    <p class="mb-1">
+                                                        Mon
+                                                    </p>
+                                                    <i class="mdi mdi-weather-hail"></i>
+                                                    <p class="mb-0" id="day-2"></p>
+                                                </div>
+                                                <div class="weakly-weather-item">
+                                                    <p class="mb-1">
+                                                        Tue
+                                                    </p>
+                                                    <i class="mdi mdi-weather-partlycloudy"></i>
+                                                    <p class="mb-0" id="day-3"></p>
+                                                </div>
+                                                <div class="weakly-weather-item">
+                                                    <p class="mb-1">
+                                                        Wed
+                                                    </p>
+                                                    <i class="mdi mdi-weather-pouring"></i>
+                                                    <p class="mb-0" id="day-4"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--weather card ends-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <footer>
+            <p>You've reached the end of your journey</p>
+        </footer> -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                <script src="./assets/JavaScript/secondarypage.js"></script>
+                <script src="./assets/JavaScript/weather.js"></script>
+                <script>
+        getWeather('philadelphia');
+                </script>
+            </body>
+        </html>
