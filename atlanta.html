@@ -67,70 +67,14 @@
                             <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
                         </div>
                     </div>
+                    <button id="tryAgain" class="btn-lg">Try again</button>
                 </div>
             </div>
         </div>
         <!-- Containers for restaurant and attraction -->
-        <div class="container-lg">
-            <div class="row">
-                <div class="col m-3 p-3 rounded text-center cards">
-                    <h1 class="text-decoration-underline event">Event 1</h1>
-                    <!-- Photo ID for API will be retaurant-photo -->
-                    <img
-                        src="./assets/images/restfiller.webp"
-                        height="200px"
-                        width="300px"
-                        class="p-1"
-                        id="event1-photo"
-                    >
-                    <!-- Description ID for API will be retaurant-description -->
-                    <p id="event1-description" class ="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
-                    <!-- URL ID for API will be retaurant-url -->
-                    <p>
-                        <a href="#" id="event1-url" class="link">Trip Advisor Link</a>
-                    </p>
-                    <!-- We can use this to randomize a new selection from API -->
-                    <button class="btn-lg">Try again</button>
-                </div>
-                <div class="col m-3 p-3 rounded text-center cards">
-                    <h1 class="text-decoration-underline event">Event 2</h1>
-                    <!-- Photo ID for API will be attraction-photo -->
-                    <img
-                        src="./assets/images/attrfiller.jpeg"
-                        height="200px"
-                        width="300px"
-                        class="p-1"
-                        id="event2-photo"
-                    >
-                    <!-- Description ID for API will be attraction-description -->
-                    <p id="event2-description" class ="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
-                    <!-- URL ID for API will be attraction-url -->
-                    <p>
-                        <a href="#" id="event2-url" class="link">Trip Advisor Link</a>
-                    </p>
-                    <!-- We can use this to randomize a new selection from API -->
-                    <button class="btn-lg">Try again</button>
-                </div>
-                <div class="col m-3 p-3 rounded text-center cards">
-                    <h1 class="text-decoration-underline event">Event 3</h1>
-                    <!-- Photo ID for API will be retaurant-photo -->
-                    <img
-                        src="./assets/images/restfiller.webp"
-                        height="200px"
-                        width="300px"
-                        class="p-1"
-                        id="event3-photo"
-                    >
-                    <!-- Description ID for API will be retaurant-description -->
-                    <p id="event3-description" class ="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime natus dolorum.</p>
-                    <!-- URL ID for API will be retaurant-url -->
-                    <p>
-                        <a href="#" id="event3-url" class="link">Trip Advisor Link</a>
-                    </p>
-                    <!-- We can use this to randomize a new selection from API -->
-                    <button class="btn-lg">Try again</button>
-                </div>
-            </div>
+        <div id= "erosFinds-container" class="container-lg">
+            <div class="row"></div>
+        </div>
             <div class="row">
                 <div class="col rounded text-center cards">
                     <h1 class="text-decoration-underline">5 Day Forecast</h1>
@@ -203,6 +147,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <script src="./assets/JavaScript/secondarypage.js"></script>
                 <script src="./assets/JavaScript/weather.js"></script>
+                <script src="./assets/JavaScript/scriptEros.js"></script>
                 <script>
         getWeather('atlanta');
                 </script>
