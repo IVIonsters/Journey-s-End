@@ -22,6 +22,36 @@ body {
   font-display: swap;
 }
 
+header {
+  width: auto;
+  margin: auto;
+  height: 50px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+/* header text styling */
+header nav {
+  font-family: Castoro Titling;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: 0 5px 10px #0004;
+}
+
+/* header text link styling */
+.nav-link {
+  color: var(--darkmain);
+  transition: .5s;
+  margin-right: 30px;
+}
+/* header text hover styling */
+.nav-link:hover {
+  color: var(--darksecond);
+  transition: .5s;
+  transform: scale(1.1);
+}
+
 .hero {
   color: var(--clr-accent3);
   height: 800px;
