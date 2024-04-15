@@ -41,7 +41,7 @@ header nav {
     font-family: Castoro Titling;
     font-weight: bold;
     font-size: 1.6em;
-    text-shadow: 0 5px 10px #0004;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 /* header text link styling */
@@ -206,6 +206,7 @@ header nav {
 .thumbnail .item .content .city {
     font-weight: 500;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 /* thumbnail nickname styling */
@@ -214,6 +215,7 @@ header nav {
     color: #FBC4AD;
     font-weight: bold;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 /* arrowIcon */
