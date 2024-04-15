@@ -117,12 +117,19 @@ header a {
     letter-spacing: 1.5px;
 }
 
-.slider .list .item .city,
+.slider .list .item .state {
+    border-radius: 5px 5px 0 0;
+}
+
+.slider .list .item .des {
+    border-radius: 0 0 5px 5px;
+}
+
+.slider .list .item .city, 
 .slider .list .item .nickname,
 .slider .list .item .state,
 .slider .list .item .des {
     background-color: hsla(0, 0%, 0%, 0.356);
-    border-radius: 5px;
     padding-left: 20px;
 }
 
