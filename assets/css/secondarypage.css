@@ -1,5 +1,7 @@
 /* Add Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Shrikhand&display=swap');
 
 :root {
   --clr-dark: #222831;
@@ -7,6 +9,11 @@
   --clr-accent1: #393E46;
   --clr-accent2: #00ADB5;
   --clr-accent3: #00FFF5;
+  --darkmain: #E9F2FF;
+  --darksecond: #FBC4AD;
+  --lightstate: #1F3340;
+  --lightcity:    #FBC4AD;
+  --lightnickname: #E9F2FF;
 }
 
 html {
@@ -30,26 +37,6 @@ header {
   z-index: 100;
   display: flex;
   justify-content: center;
-}
-/* header text styling */
-header nav {
-  font-family: Castoro Titling;
-  font-weight: bold;
-  font-size: 1em;
-  text-shadow: 0 5px 10px #0004;
-}
-
-/* header text link styling */
-.nav-link {
-  color: var(--darkmain);
-  transition: .5s;
-  margin-right: 30px;
-}
-/* header text hover styling */
-.nav-link:hover {
-  color: var(--darksecond);
-  transition: .5s;
-  transform: scale(1.1);
 }
 
 .hero {
@@ -78,3 +65,78 @@ header nav {
 .shadow {
   text-shadow: 1px 1px 5px black;
 }
+/* ----------------------------------------- Zach CSS Styling --------------------------------------------------------------- */
+
+/* header text styling */
+header nav {
+  font-family: Castoro Titling;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: 0 5px 10px #0004;
+}
+
+/* header text link styling */
+.nav-link {
+  color: var(--darkmain);
+  transition: .5s;
+  margin-right: 30px;
+}
+/* header text hover styling */
+.nav-link:hover {
+  color: var(--darksecond);
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+/* Tampa Name Styling */
+.city {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: .5em;
+  font-family: Shrikhand;
+  text-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+/* Nickname Styling */
+.nickname {
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: 1em;
+  font-family: Shrikhand;
+  text-shadow: 0 5px 10px rgb(0, 0, 0);
+  color: #FBC4AD;
+}
+
+/* Description of city styling */
+.des {
+  font-size: 1.25em;
+  font-weight: 300; 
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+/* Event header styling */
+.event{
+  font-size: 1.75em;
+  font-weight: 300; 
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+/* Event Description Styling */
+.description {
+  font-size: 1em;
+  font-weight: 300; 
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+  color: #ffffff;
+  letter-spacing: 1.2px;
+}
+
+
+
+
+/* ----------------------------------------------------END-------------------------------------------------------------------- */

@@ -101,7 +101,7 @@ header nav {
     text-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
-/* styling for city and nickname */
+/* styling for city */
 .slider .list .item .city {
     font-size: 9em;
     font-weight: 700;
@@ -119,6 +119,7 @@ header nav {
     line-height: 1em;
     font-family: Shrikhand;
     text-shadow: 0 5px 10px rgb(0, 0, 0);
+    color: #FBC4AD;
 }
 
 /* description styling in slider */
@@ -135,11 +136,6 @@ header nav {
     background-color: hsla(0, 0%, 0%, 0.521);
     border-radius: 20px;
     padding-left: 20px;
-}
-
-/* color change for city nicknames - may cycle this based on city */
-.slider .list .item .nickname {
-    color: #FBC4AD;
 }
 
 /* button styling */
