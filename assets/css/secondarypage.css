@@ -46,17 +46,6 @@ header {
   margin-bottom: 25px;
 }
 
-.cards {
-  background-color: var(--clr-accent2);
-  color: var(--clr-dark);
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 100;
-}
-.navy a {
-  color: var(--clr-accent2);
-}
-
 /* light and dark mode color styling */
 .lightmode {
   background-color: var(--clr-light);
@@ -109,7 +98,7 @@ header nav {
   transform: scale(1.1);
 }
 
-/* Tampa Name Styling */
+/* City Name Styling */
 .city {
   font-size: 3em;
   font-weight: 700;
@@ -132,11 +121,30 @@ header nav {
 
 /* Description of city styling */
 .des {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 300; 
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
   color: #ffffff;
   letter-spacing: 1.5px;
+  background-color: hsla(0, 0%, 0%, 0.521);
+  border-radius: 10px;
+}
+
+.btn-lg {
+    padding: 10px 10px;
+    background-color: #e9f2ffbe;
+    letter-spacing: 3px;
+    font-family: Castoro Titling;
+    font-weight: bolder;
+    font-size: .8em;
+    color: #000;
+    border: 1px solid #e9f2ffbe;
+    border-radius: 5px;
+}
+
+/* event card styling */
+.col.rounded.cards {
+  background-color: hsla(0, 0%, 0%, 0.521);
 }
 
 /* Event header styling */
@@ -171,6 +179,18 @@ header nav {
   color: var(--darksecond);
   transition: .5s;
   transform: scale(1.1);
+}
+
+/* Weather Card Styling */
+.card.m-3.pt-3 {
+  background: linear-gradient(180deg, hsl(39, 100%, 75%), hsl(192, 100%, 75%));
+  font-family: Castoro Titling;
+  font-weight: 600;
+  font-size: .9em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 /* Footer Styling */
