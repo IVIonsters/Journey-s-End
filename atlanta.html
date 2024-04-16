@@ -1,181 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
-        >
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
-        <!-- secondarypage CSS -->
-        <link rel="stylesheet" href="./assets/css/secondarypage.css">
-        <link rel="stylesheet" href="./assets/css/weather.css">
-        <title>Enjoy the Journey</title>
-    </head>
-    <body>
-        <!-- Joe's work with adding a nav bar -->
-        <!-- I want to figure out how to make the nav bar transparent -->
-        <header id="header">
-            <nav class="nav">
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a id="philadelphia" class="nav-link" aria-current="page" href="./philadelphia.html">Philadelphia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="tampa" class="nav-link" href="./tampa.html">Tampa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="miami" class="nav-link" href="./miami.html">Miami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="pittsburgh" class="nav-link" href="./pittsburgh.html">Pittsburgh</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="atlanta" class="nav-link" href="./atlanta.html">Atlanta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="mode"><i class="bi bi-brightness-high-fill"></i></a>
-                    </li>
-                    </ul>
-                </nav>  
-        </header>
-        <!-- We could insert a logo image if we want or just use the name the name coudld be clickable for the home page if we don't want any links -->
-        <a href="#" class="navbar-brand mb-0 h1"></a>
-        <!-- Joe's work complete -->
-        <!-- Want to make text stand out a bit more over the images, not sure best way to make that happen, tried background and it didnt look good -->
-        <div class="container-lg">
-            <div class="p-3 m-3 text-center bg-image align-items-center justify-content-center rounded" style="
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <!-- secondarypage CSS -->
+    <link rel="stylesheet" href="./assets/css/secondarypage.css">
+    <link rel="stylesheet" href="./assets/css/weather.css">
+    <title>Enjoy the Journey</title>
+</head>
+
+<body>
+    <!-- Joe's work with adding a nav bar -->
+    <!-- I want to figure out how to make the nav bar transparent -->
+    <header id="header">
+        <nav class="nav">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a id="philadelphia" class="nav-link" aria-current="page"
+                        href="./philadelphia.html">Philadelphia</a>
+                </li>
+                <li class="nav-item">
+                    <a id="tampa" class="nav-link" href="./tampa.html">Tampa</a>
+                </li>
+                <li class="nav-item">
+                    <a id="miami" class="nav-link" href="./miami.html">Miami</a>
+                </li>
+                <li class="nav-item">
+                    <a id="pittsburgh" class="nav-link" href="./pittsburgh.html">Pittsburgh</a>
+                </li>
+                <li class="nav-item">
+                    <a id="atlanta" class="nav-link" href="./atlanta.html">Atlanta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="mode"><i class="bi bi-brightness-high-fill"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- We could insert a logo image if we want or just use the name the name coudld be clickable for the home page if we don't want any links -->
+    <a href="#" class="navbar-brand mb-0 h1"></a>
+    <!-- Joe's work complete -->
+    <!-- Want to make text stand out a bit more over the images, not sure best way to make that happen, tried background and it didnt look good -->
+    <div class="container-lg">
+        <div class="p-3 m-3 text-center bg-image align-items-center justify-content-center rounded" style="
     background-image: url('./assets/images/atlanta-dark.png');
     background-size: cover;
     background-position: 100%;
     height: 400px;">
-                <div class="mask">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="text-white">
-                            <h1 class="mb-3 mt-5 pt-5 city">Atlanta</h1>
-                            <h2 class="mb-3 mt-3 pt-3 nickname">Hot'Lanta</h2>
-                            <h4 class="mb-3 mt-3 pt-3 des">A vibrant city known for its rich cultural diversity, thriving music scene, and dynamic blend of Southern charm and urban innovation.</h4>
-                            <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
-                        </div>
+            <div class="mask">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3 mt-5 pt-5 city">Atlanta</h1>
+                        <h2 class="mb-3 mt-3 pt-3 nickname">Hot'Lanta</h2>
+                        <h4 class="mb-3 mt-3 pt-3 des">A vibrant city known for its rich cultural diversity, thriving
+                            music scene, and dynamic blend of Southern charm and urban innovation.</h4>
+                        <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
                     </div>
-                    <button id="tryAgain" class="btn-lg">Try again</button>
                 </div>
+                <button id="tryAgain" class="btn-lg">Try again</button>
             </div>
         </div>
-        <div id= "erosFinds-container" class="container-lg">
-            <div class="row"></div>
-        </div>
-            <div class="row">
-                <div class="col rounded cards">
-                    <h1 class="text-decoration-underline event">5 Day Forecast</h1>
-    
-                    <!-- Weather App feature -->
-                    <div class="page-content page-container" id="page-content">
-                        <div class="padding">
-                            <div class="row container d-flex justify-content-center">
-                                <div class="col-lg-12 grid-margin stretch-card">
-                                    <div class="d-flex p-2 mt-4 " id="card-container">
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day0date">Date</h4>
-                                            <img src="./assets/images/sun.png" id="imagetoday" height="50px" width="50px">
-                                            <p id="day0temp">Temperature:</p>
-                                            <p id="day0wind">Wind Speed:</p>
-                                            <p id="day0humidity">Humidity:</p>
-                                        </div>
-    
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day1date">Date</h4>
-                                            <img src="./assets/images/sun.png" id="imageday0" height="50px" width="50px">
-                                            <p id="day1temp">Temperature:</p>
-                                            <p id="day1wind">Wind Speed:</p>
-                                            <p id="day1humidity">Humidity:</p>
-                                        </div>
-    
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day2date">Date</h4>
-                                            <img id="imageday8" src="./assets/images/sun.png" height="50px" width="50px">
-                                            <p id="day2temp">Temperature:</p>
-                                            <p id="day2wind">Wind Speed:</p>
-                                            <p id="day2humidity">Humidity:</p>
-                                        </div>
-    
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day3date">Date</h4>
-                                            <img id="imageday16" src="./assets/images/sun.png" height="50px" width="50px">
-                                            <p id="day3temp">Temperature:</p>
-                                            <p id="day3wind">Wind Speed:</p>
-                                            <p id="day3humidity">Humidity:</p>
-                                        </div>
-    
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day4date">Date</h4>
-                                            <img id="imageday24" src="./assets/images/sun.png" height="50px" width="50px">
-                                            <p id="day4temp">Temperature:</p>
-                                            <p id="day4wind">Wind Speed:</p>
-                                            <p id="day4humidity">Humidity:</p>
-                                        </div>
-    
-                                        <div class="card m-3 pt-3" style="width:12rem;">
-                                            <h4 id="day5date">Date</h4>
-                                            <img id="imageday32" src="./assets/images/sun.png" height="50px" width="50px">
-                                            <p id="day5temp">Temperature:</p>
-                                            <p id="day5wind">Wind Speed:</p>
-                                            <p id="day5humidity">Humidity:</p>
-                                        </div>
-                                    </div>
+    </div>
+    <div id="erosFinds-container" class="container-lg">
+        <div class="row"></div>
+    </div>
+    <div class="row">
+        <div class="col rounded cards">
+            <h1 class="text-decoration-underline event d-flex justify-content-center pt-3">5 Day Forecast</h1>
+            <!-- Weather App feature -->
+            <div class="page-content page-container d-flex justify-content-center" id="page-content">
+                <div class="padding">
+                    <div class="row container d-flex justify-content-center">
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="d-flex p-2 mt-4 " id="card-container">
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day0date">Date</h4>
+                                    <img src="./assets/images/sun.png" id="imagetoday" height="50px" width="50px">
+                                    <p id="day0temp">Temperature:</p>
+                                    <p id="day0wind">Wind Speed:</p>
+                                    <p id="day0humidity">Humidity:</p>
                                 </div>
-    
+
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day1date">Date</h4>
+                                    <img src="./assets/images/sun.png" id="imageday0" height="50px" width="50px">
+                                    <p id="day1temp">Temperature:</p>
+                                    <p id="day1wind">Wind Speed:</p>
+                                    <p id="day1humidity">Humidity:</p>
+                                </div>
+
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day2date">Date</h4>
+                                    <img id="imageday8" src="./assets/images/sun.png" height="50px" width="50px">
+                                    <p id="day2temp">Temperature:</p>
+                                    <p id="day2wind">Wind Speed:</p>
+                                    <p id="day2humidity">Humidity:</p>
+                                </div>
+
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day3date">Date</h4>
+                                    <img id="imageday16" src="./assets/images/sun.png" height="50px" width="50px">
+                                    <p id="day3temp">Temperature:</p>
+                                    <p id="day3wind">Wind Speed:</p>
+                                    <p id="day3humidity">Humidity:</p>
+                                </div>
+
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day4date">Date</h4>
+                                    <img id="imageday24" src="./assets/images/sun.png" height="50px" width="50px">
+                                    <p id="day4temp">Temperature:</p>
+                                    <p id="day4wind">Wind Speed:</p>
+                                    <p id="day4humidity">Humidity:</p>
+                                </div>
+
+                                <div class="card m-3 pt-3" style="width:12rem;">
+                                    <h4 id="day5date">Date</h4>
+                                    <img id="imageday32" src="./assets/images/sun.png" height="50px" width="50px">
+                                    <p id="day5temp">Temperature:</p>
+                                    <p id="day5wind">Wind Speed:</p>
+                                    <p id="day5humidity">Humidity:</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <!-- footer design -->
-            <footer class="w-100 py-4 flex-shrink-0">
-                <div class="container py-4">
-                    <div class="row gy-4 gx-5">
-                        <div class="col-lg-4 col-md-6">
-                            <h5 class="h1 text-white">Journeys End</h5>
-                            <p class="small text-muted">Enjoy the journey wherever you go!</p>
-                            <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved.</p>
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-                            <h5 class="text-white mb-3">Quick links</h5>
-                            <ul class="list-unstyled text-muted">
-                                <li><a href="./index.html" class="linkfooter">Home</a></li>
-                                <li><a href="./developers.html" class="linkfooter">About us!</a></li>
-                                <li><a href="./philadelphia.html" class="linkfooter">Get started</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6">
-                            <h5 class="text-white mb-3">Newsletter</h5>
-                            <p class="small text-muted">Insert News About City Here</p>
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <!-- footer design -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Journeys End</h5>
+                    <p class="small text-muted">Enjoy the journey wherever you go!</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved.</p>
                 </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-            <script src="./assets/JavaScript/secondarypage.js"></script>
-            <script src="./assets/JavaScript/weather.js"></script>
-            <script src="./assets/JavaScript/ticket.js"></script>
-            <script src="./assets/JavaScript/scriptEros.js"></script>
-            <script src="./assets/JavaScript/scriptMainEros.js"></script>
-            <script>
-                getWeather('atlanta');
-                getWeather5day('atlanta');
-                getWeather5dayPhotos('atlanta');
-            </script>
-    </body>
-    
-    </html>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="./index.html" class="linkfooter">Home</a></li>
+                        <li><a href="./developers.html" class="linkfooter">About us!</a></li>
+                        <li><a href="./philadelphia.html" class="linkfooter">Get started</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Insert News About City Here</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/JavaScript/secondarypage.js"></script>
+    <script src="./assets/JavaScript/weather.js"></script>
+    <script src="./assets/JavaScript/ticket.js"></script>
+    <script src="./assets/JavaScript/scriptEros.js"></script>
+    <script src="./assets/JavaScript/scriptMainEros.js"></script>
+</body>
+
+</html>

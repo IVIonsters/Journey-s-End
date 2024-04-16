@@ -25,7 +25,10 @@ const getSuggestions = function () {
   
     setTimeout(() => {
       prepareResults();
-    }, 1500); // 1500 milliseconds = 1.5 seconds
+    }, 750); // 750 milliseconds = 1.5 seconds
+
+
+    
   };
   
   
