@@ -13,8 +13,10 @@
 </details>
 
 ## Description
+
     Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
     While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
+
 ## Languages
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -23,9 +25,9 @@
 
 ## Features
 
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+* **Weather API:** DESCRIBE FEATURES HERE
+* **Try again Button:** DESCRIBE FEATURES HERE
+* **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
 * **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
 * **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
 * **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
@@ -42,7 +44,11 @@
 
 ## Credits
 
+Used this site code snippet to develop navbar on the second page
+
+* <https://www.w3schools.com/bootstrap5/bootstrap_navbar.php>
 * [N/A](N/A)
+*
 
 ## License
 
