@@ -57,9 +57,31 @@ header {
   color: var(--clr-accent2);
 }
 
+/* light and dark mode color styling */
 .lightmode {
   background-color: var(--clr-light);
   color: var(--clr-dark);
+}
+
+.lightmode .nav-link {
+  color: var(--lightstate)
+}
+
+.lightmode .linkfooter {
+  color: var(--lightstate);
+  transition: .5s;
+}
+
+.lightmode .small.text-muted {
+  color: var(--lightstate) !important;
+}
+
+.lightmode .small.text-muted.mb-0 {
+  color: var(--lightstate) !important;
+}
+
+.lightmode h5 {
+  color: var(--lightstate) !important;
 }
 
 .shadow {
@@ -72,7 +94,6 @@ header nav {
   font-family: Castoro Titling;
   font-weight: bold;
   font-size: 1em;
-  text-shadow: 0 5px 10px #0004;
 }
 
 /* header text link styling */
@@ -161,8 +182,7 @@ header nav {
   color: var(--darkmain);
   transition: .5s;
   margin-right: 30px;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+  font-weight: 400;
 }
 
 .linkfooter:hover {
