@@ -110,9 +110,9 @@ const getSuggestions = function () {
     const generateEventHtml = (event, index) => {
         return `
             <div class="col m-3 p-3 rounded text-center cards">
-                <h1 class="text-decoration-underline">${event.title}</h1>
+                <h1 class="text-decoration-underline event">${event.title}</h1>
                 <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
-                <p><a href="${event.url}" id="event${index + 1}-url">Link to Event!</a></p>
+                <p><a href="${event.url}" class="link" id="event${index + 1}-url">Get Tickets!</a></p>
             </div>
         `;
     };
