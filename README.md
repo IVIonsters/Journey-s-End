@@ -19,18 +19,18 @@
 
 ## Languages
 
-* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- [HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- [CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## Features
 
-* **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
-* **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
-* **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
-* **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
-* **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
+- **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
+- **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
+- **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
+- **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
+- **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
+- **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
 
 ## Usage
 
@@ -43,17 +43,19 @@
 * ![SCREENSHOTS GO HERE](./assets/refimages/lightmodemain.png)
 * ![SCRENSHOTS HERE](./assets/refimages/lightmodeblog.png)
 
-
 ## Credits
+
+Flowbite for icons
+
+- [Flowbite](https://flowbite.com/)
 
 Used this site code snippet to develop navbar on the second page
 
-* [w3 Schools](https://www.w3schools.com/bootstrap5/bootstrap_navbar.php)
+- [w3 Schools](https://www.w3schools.com/bootstrap5/bootstrap_navbar.php)
 
 Used unsplash for photos on mainpage
 
-* [Unsplash](https://unsplash.com/)
-*
+- [Unsplash](https://unsplash.com/)
 
 ## License
 
