@@ -41,6 +41,23 @@
 * ![SCREENSHOTS GO HERE](./assets/refimages/lightmodemain.png)
 * ![SCRENSHOTS HERE](./assets/refimages/lightmodeblog.png)
 
+## Contibution Screenshots
+
+## Tasks and Roles
+
+### Zachary Polof
+
+### Peter Smith
+
+### Stephanie Carr
+
+### David Rauf
+
+### Joseph Ruff
+  Helped design the second page - CSS, fonts, and responsive nav bar, assisted with developing the README file, helped with updating photos to the mainpage
+
+## Team Repos
+
 ## Credits
 
 Flowbite for icons
