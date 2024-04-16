@@ -28,9 +28,7 @@
 - **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
 - **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
 - **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
-- **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
-- **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
-- **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
+- **Responsive Navbar:** The website incorporates a responsive navigation bar across all pages, featuring links that dynamically change their appearance and style when hovered over by the user.
 
 ## Usage
 
