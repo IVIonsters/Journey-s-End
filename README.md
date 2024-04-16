@@ -34,7 +34,7 @@
 
 ## Usage
 
-
+    The webpage acts as a tool for travelers exploring specific cities, providing recommendations for events to attend. If users aren't satisfied with the initial options, they can explore additional choices by selecting the "try again" button.
 
 * [Journeys End Live Link](https://ivionsters.github.io/Journeys-End/)
 
@@ -48,11 +48,11 @@
 
 Used this site code snippet to develop navbar on the second page
 
-* <https://www.w3schools.com/bootstrap5/bootstrap_navbar.php>
+* [w3 Schools](https://www.w3schools.com/bootstrap5/bootstrap_navbar.php)
 
 Used unsplash for photos on mainpage
 
-* <https://unsplash.com/>
+* [Unsplash](https://unsplash.com/)
 *
 
 ## License
