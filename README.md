@@ -25,14 +25,16 @@
 
 ## Features
 
-* **Weather API:** DESCRIBE FEATURES HERE
-* **Try again Button:** DESCRIBE FEATURES HERE
+* **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
+* **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
 * **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
 * **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE
 * **DEFINE FEATURES MAN.:** DESCRIBE FEATURES HERE
 * **DEFINE FEATURES MAN:** DESCRIBE FEATURES HERE 
 
-* EXPLAIN GENERAL DESIGN USAGE
+## Usage
+
+
 
 * [Journeys End Live Link](https://ivionsters.github.io/Journeys-End/)
 
@@ -47,7 +49,9 @@
 Used this site code snippet to develop navbar on the second page
 
 * <https://www.w3schools.com/bootstrap5/bootstrap_navbar.php>
-* [N/A](N/A)
+
+Used unsplash for photos on mainpage
+* <https://unsplash.com/>
 *
 
 ## License
