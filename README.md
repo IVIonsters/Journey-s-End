@@ -51,6 +51,7 @@ Used this site code snippet to develop navbar on the second page
 * <https://www.w3schools.com/bootstrap5/bootstrap_navbar.php>
 
 Used unsplash for photos on mainpage
+
 * <https://unsplash.com/>
 *
 
