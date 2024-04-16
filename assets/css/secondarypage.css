@@ -57,6 +57,7 @@ header {
   color: var(--clr-accent2);
 }
 
+/* light and dark mode color styling */
 .lightmode {
   background-color: var(--clr-light);
   color: var(--clr-dark);
@@ -69,8 +70,6 @@ header {
 .lightmode .linkfooter {
   color: var(--lightstate);
   transition: .5s;
-  margin-right: 30px;
-  font-weight: 300;
 }
 
 .lightmode .small.text-muted {
@@ -84,9 +83,6 @@ header {
 .lightmode h5 {
   color: var(--lightstate) !important;
 }
-
-
-
 
 .shadow {
   text-shadow: 1px 1px 5px black;
@@ -186,8 +182,7 @@ header nav {
   color: var(--darkmain);
   transition: .5s;
   margin-right: 30px;
-  font-weight: 300;
-
+  font-weight: 400;
 }
 
 .linkfooter:hover {
