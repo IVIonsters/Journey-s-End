@@ -15,7 +15,6 @@ day3.setDate(day0.getDate()+3);
 day4.setDate(day0.getDate()+4);
 day5.setDate(day0.getDate()+5);
 
-
 // Function to get todays weather
 async function getWeather(city){
     const apiData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
@@ -114,4 +113,13 @@ async function getWeather5dayPhotos(city){
         document.getElementById("imageday" + n).src = "./assets/images/fog.png";
     }
 }
+};
+
+const journeyWeatherPrep = function () {
+
+    getWeather(JSON.parse(localStorage.getItem('city')));
+    getWeather5day(JSON.parse(localStorage.getItem('city')));
+    getWeather5dayPhotos(JSON.parse(localStorage.getItem('city')));
 }
+
+journeyWeatherPrep();
