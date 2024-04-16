@@ -54,9 +54,29 @@
 ### David Rauf
 
 ### Joseph Ruff
-  Helped design the second page - CSS, fonts, and responsive nav bar, assisted with developing the README file, helped with updating photos to the mainpage
+    I contributed to designing the second page, which was used as a template for each city's webpage. My involvement included CSS for fonts, HTML structuring, and ensuring images matched each city. I also helped create a responsive navigation bar and assisted in updating photos on the main page, as well as contributed to developing the README file.
 
-## Team Repos
+## Team Contact
+
+### Zachary Polof
+
+[IVIonsters](https://github.com/IVIonsters)
+
+### Peter Smith
+
+[peteCodes4u](https://github.com/petecodes4u)
+
+### Stephanie Carr
+
+[sacarr91](https://github.com/sacarr91)
+
+### David Rauf
+
+[drauf727](https://github.com/drauf727)
+
+### Joseph Ruff
+
+[joegruff16](https://github.com/joegruff16)
 
 ## Credits
 
@@ -71,6 +91,8 @@ Used this site code snippet to develop navbar on the second page
 Used unsplash for photos on mainpage
 
 - [Unsplash](https://unsplash.com/)
+
+<a href="#description">back to the top</a>
 
 ## License
 
