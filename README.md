@@ -4,7 +4,7 @@
 <details>
 <summary>Table of Contents</summary>
     <ul>
-        <li><a href="#description">Description</li>
+        <li><a href="#abouttheproject">About the Project</li>
         <li><a href="#languages">languages</li>
         <li><a href="#features">Features</li>
         <li><a href="#usage">Usage</li>
@@ -13,7 +13,9 @@
     </ul>
 </details>
 
-## Description
+## About the Project
+
+![""](./assets/images/philly-readme.png "")
 
     Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
     While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
