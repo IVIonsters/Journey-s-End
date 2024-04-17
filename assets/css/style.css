@@ -17,6 +17,7 @@
     transition: 1s;
 }
 
+/* header positioning */
 .slogan-header {
     margin: 0;
     padding: 0;
@@ -29,6 +30,7 @@
     color: #fff;
 }
 
+/* text position and styling inside slogan class */
 .slogan {
     margin: 0;
     padding: 0;
@@ -42,6 +44,7 @@
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
+/* slogan positioning when "active class" applied via JS */
 .slogan.active {
     margin: 0;
     padding: 0;
@@ -52,6 +55,7 @@
     transition: ease-in-out .75s;
 }
 
+/* slogan positioning when "fade class" applied via JS */
 .slogan.fade {
     margin: 0;
     padding: 0;
@@ -61,6 +65,7 @@
     opacity: 0;
 }
 
+/* container styling for behind secondary text */
 .container {
     background-color: hsla(0, 0%, 0%, 0.521);
     border-radius: 15px;
