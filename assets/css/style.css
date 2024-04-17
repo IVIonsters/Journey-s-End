@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
 /* Splash Screen */
 .splashpage {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shrikhand', 'Castoro Titling', 'Poppins', sans-serif;
+    font-family: Shrikhand, sans-serif;
     position: fixed;
     z-index: 10000;
     left: 0;
@@ -19,7 +21,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shrikhand', 'Castoro Titling', 'Poppins', sans-serif;
     position: absolute;
     z-index: 10003;
     top: 40%;
@@ -32,34 +33,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shrikhand', 'Castoro Titling', 'Poppins', sans-serif;
-
     position: relative;
     z-index: 10003;
     display: inline-block;
     bottom: -20px;
     opacity: 0;
-    font-family: 'Castoro Titling';
+    font-size: 80px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .slogan.active {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shrikhand', 'Castoro Titling', 'Poppins', sans-serif;
     bottom: 0;
     z-index: 10003;
     opacity: 1;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out .75s;
 }
 
 .slogan.fade {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shrikhand', 'Castoro Titling', 'Poppins', sans-serif;
     z-index: 10003;
     bottom: 150px;
     opacity: 0;
 }
+
+.container {
+    background-color: hsla(0, 0%, 0%, 0.521);
+    border-radius: 15px;
+    font-size: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
 /* end splash styling */
