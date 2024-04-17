@@ -123,6 +123,10 @@ Used unsplash for photos on mainpage
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
+dcode tutorial on insertAdjacentHTML 
+
+- [youtube](https://www.youtube.com/watch?v=E6B-ig8NHQE)
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

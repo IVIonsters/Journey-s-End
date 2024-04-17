@@ -1,6 +1,6 @@
 // Defining variables for Weather Search
 const apiKey = '5ccfb87c2313dc93a4278d2086ead169';
-const weatherIcon = document.querySelector("#todayimage");
+const weatherIcon = document.querySelector("#todayimage") || '';
 
 // Defining Dates
 const day0 = new Date();
@@ -19,7 +19,7 @@ day5.setDate(day0.getDate()+5);
 async function getWeather(city){
     const apiData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
     var data = await apiData.json();
-    console.log(data);
+    // console.log(data);
     // document.getElementById("cityname").innerHTML = data.name;
     document.getElementById("day0date").innerHTML = `${(day0.getMonth()+1)}/${day0.getDate()}/${day0.getFullYear()}`;
     document.getElementById("day0temp").innerHTML = `Temperature: ${(Math.round((data.main.temp-273.15)*1.8+32))} °F`;
@@ -53,7 +53,7 @@ async function getWeather(city){
 async function getWeather5day(city){
     const apiData5 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`);
     var data5 = await apiData5.json();
-    console.log(data5);
+    // console.log(data5);
     
     document.getElementById("day1date").innerHTML = `${(day1.getMonth()+1)}/${day1.getDate()}/${day1.getFullYear()}`;
     document.getElementById("day1temp").innerHTML = `Temperature: ${(Math.round((data5.list[0].main.temp-273.15)*1.8+32))}°F`;
@@ -89,7 +89,7 @@ async function getWeather5day(city){
 async function getWeather5dayPhotos(city){
     const apiData5 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`);
     var data5Photos = await apiData5.json();
-    console.log(data5Photos);
+    // console.log(data5Photos);
     
    for (let n=0; n<33; n+=8) {
     if (data5Photos.list[n].weather[0].main == 'Clouds'){
