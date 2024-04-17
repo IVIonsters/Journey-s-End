@@ -1,3 +1,27 @@
+
+
+
+
+
+// Select the nav links
+const tampaLink = document.getElementById('tampa');
+const atlantaaLink = document.getElementById('atlanta');
+const philiLink = document.getElementById('philadelphia')
+const miamiLink = document.getElementById('miami')
+const pittLink = document.getElementById('pittsburgh')
+
+// Add event listeners to the nav links and set city value in local storage
+tampaLink.addEventListener('click', function() {localStorage.setItem('city', JSON.stringify('tampa'));});
+atlantaaLink.addEventListener('click', function() {localStorage.setItem('city', JSON.stringify('atlanta'));});
+philiLink.addEventListener('click', function () {localStorage.setItem('city', JSON.stringify('philadelphia'));});
+miamiLink.addEventListener('click', function () {localStorage.setItem('city', JSON.stringify('miami'));});
+pittLink.addEventListener('click', function () {localStorage.setItem('city', JSON.stringify('pittsburgh'));});
+
+
+
+
+
+
 const getSuggestions = function () {
 
     let cityData = localStorage.getItem('city');
@@ -114,7 +138,7 @@ const getSuggestions = function () {
         return `
             <div class="col m-3 p-3 rounded text-center cards">
                 <h1 class="text-decoration-underline event">${event.title}</h1>
-                <img src="${event.imageSrc}" height="200px" width="300px" class="p-1" id="event${index + 1}-photo">
+                <img src="${event.imageSrc}" height="200px" width="300px" class="card m-3" id="event${index + 1}-photo">
                 <p><a href="${event.url}" class="link" id="event${index + 1}-url">Get Tickets!</a></p>
             </div>
         `;
