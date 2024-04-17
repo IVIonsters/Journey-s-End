@@ -1,6 +1,9 @@
 <a name="readme-top"></a>
 
 # Journeys End || Lets Enjoy The Journey
+- <a href="https://github.com/IVIonsters/Journeys-End/graphs/contributors">![Static Badge](https://img.shields.io/badge/Contributors-5-green)
+</a>
+
 <details>
 <summary>Table of Contents</summary>
     <ul>
@@ -18,13 +21,16 @@
     Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
     While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Languages
 
-- [HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-- [CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 
 ## Features
 
@@ -44,12 +50,11 @@
 
 * [Journeys End Repo Link](https://github.com/IVIonsters/Journeys-End)
 
-* ![SCREENSHOTS GO HERE](./assets/refimages/lightmodemain.png)
-* ![SCRENSHOTS HERE](./assets/refimages/lightmodeblog.png)
+* ![SCREENSHOTS GO HERE](./assets/images/usagevid.gif)
 
 ## Contibution Screenshot
 
-![""](./assets/images/screen-shot-commit-history.png "")
+!["contributions"](./assets/images/contimage.png)
 
 ### Tasks and Roles
 
@@ -116,9 +121,19 @@ Used unsplash for photos on mainpage
 
 - [Unsplash](https://unsplash.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+
+
+
+
+
+<!-- REFERENCE LINKS HERE -->
+
+[Static Badge]: (https://img.shields.io/badge/Contributors-5-green)
+[contributors]: https://github.com/IVIonsters/Journeys-End/graphs/contributors
