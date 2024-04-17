@@ -209,4 +209,11 @@ header nav {
   color: var(--darksecond);
   transition: .5s;
 }
+
+@media screen and (max-width: 1000px){
+  #card-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 /* ----------------------------------------------------END-------------------------------------------------------------------- */
