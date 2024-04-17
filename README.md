@@ -51,7 +51,7 @@
 
 ## Contibution Screenshot
 
-![""](./assets/images/screen-shot-commit-history.png "")
+![""](./assets/images/contributions-readme.png "")
 
 ### Tasks and Roles
 
