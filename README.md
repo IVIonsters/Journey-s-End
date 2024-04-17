@@ -1,5 +1,6 @@
-# Journeys End || Lets Enjoy The Journey
+<a name="#readme-top"></a>
 
+# Journeys End || Lets Enjoy The Journey
 <details>
 <summary>Table of Contents</summary>
     <ul>
@@ -27,8 +28,11 @@
 
 - **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
 - **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
-- **Dark Mode Toggle:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
+- **Light/Dark:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
 - **Responsive Navbar:** The website incorporates a responsive navigation bar across all pages, featuring links that dynamically change their appearance and style when hovered over by the user.
+- **Splash Page:**
+- **Footer:**
+
 
 ## Usage
 
@@ -50,13 +54,15 @@
 ### Zachary Polof
 
 ### Peter Smith
+    I developed the JavaScript code to fetch and randomize event data from Ticketmaster, integrating it into each page. 
 
 ### Stephanie Carr
+    I collaborated on UX/UI design, covering Google Font selection, original image design, and color palette, while also contributing to team organization efforts.
 
 ### David Rauf
 
 ### Joseph Ruff
-    I contributed to designing the second page, which was used as a template for each city's webpage. My involvement included CSS for fonts, HTML structuring, and ensuring images matched each city. I also helped create a responsive navigation bar and assisted in updating photos on the main page, as well as contributed to developing the README file.
+    I assisted in designing the second page template for each city's webpage, managing CSS for fonts, HTML structuring, and ensuring image consistency. Additionally, I contributed to creating a responsive navigation bar, updating main page photos, and developing the README file.
 
 ## Team Contact
 
@@ -94,7 +100,7 @@ Used unsplash for photos on mainpage
 
 - [Unsplash](https://unsplash.com/)
 
-<a href="#description">back to the top</a>
+(<a href="#readme-top">back to top</a>)
 
 ## License
 
