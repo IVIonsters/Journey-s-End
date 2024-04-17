@@ -14,12 +14,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1) * 5000)
+                }, 6000)
             })
         }, 200);
 
         setTimeout(() => {
             splash.style.top = '-100vh';
-        }, 4000)
+        }, 7000)
     })
 })
