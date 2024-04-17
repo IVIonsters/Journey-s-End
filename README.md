@@ -55,6 +55,7 @@
 
 ### Peter Smith
     I developed the JavaScript code to fetch and randomize event data from Ticketmaster, integrating it into each page. 
+---
 
 ### Stephanie Carr
     I collaborated on UX/UI design, covering Google Font selection, original image design, and color palette, while also contributing to team organization efforts.
