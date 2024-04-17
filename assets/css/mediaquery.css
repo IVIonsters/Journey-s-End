@@ -30,8 +30,14 @@
     .slider .list .item .content {
         padding-right: 0;
     }
+    .slider .list .item .state {
+        font-size: 1.8em;
+    }
     .slider .list .item .content .city {
-        font-size: 30px;
+        font-size: 6em;
+    }
+    .slider .list .item .nickname {
+        font-size: 3.5em;
     }
     header nav {
         font-size: 1.25em;
@@ -49,6 +55,26 @@
     }
 }
 
+@media screen and (min-width: 1025px) {
+    .slider .list .item .content {
+        padding-right: 5%;
+    }
+    header nav {
+        font-size: 1.5em;
+    }
+    .thumbnail .item {
+        width: 200px;
+        height: 300px;
+    }
+    .arrowIcon {
+        font-size: 2em;
+    }
+    .arrowIcon button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 /* Media query for larger screens  */
 @media screen and (min-width: 2000px) {
     header nav {
@@ -59,11 +85,9 @@
         margin-right: 40px;
     }
     .slider .list .item .content {
-        padding-right: 400px;
+        padding-right: 10%;
     }
-    .slider .list .item .content .city {
-        font-size: 70px;
-    }
+    
     .slider .list .item .buttons {
         grid-template-columns: repeat(2, 150px);
         grid-template-rows: 60px;
@@ -75,6 +99,12 @@
     }
 }
 
+/* Media query for ultrawide screens  */
+@media screen and (min-width: 3250px) {
+    .slider .list .item .content {
+        padding-right: 8%;
+    }
+}
 
 
 /* - [ ]  media query break points
