@@ -7,12 +7,12 @@
 <details>
 <summary>Table of Contents</summary>
     <ul>
-        <li><a href="#description">Description</li>
-        <li><a href="#languages">languages</li>
-        <li><a href="#features">Features</li>
-        <li><a href="#usage">Usage</li>
-        <li><a href="#acknowledgements">Acknowledgements</li>
-        <li><a href="#license">License</li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+        <li><a href="#license">License</a></li>
     </ul>
 </details>
 
@@ -21,26 +21,27 @@
     Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
     While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
 
-<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Languages
 
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-- ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Features
 
-- **Weather API:** When City link is clicked on the mainpage weather data is pulled from OpenWeather API for that specific city
-- **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API
-- **Light/Dark:** When you click the toggle image on either page it will toggle the background and font color to light or dark mode
-- **Responsive Navbar:** The website incorporates a responsive navigation bar across all pages, featuring links that dynamically change their appearance and style when hovered over by the user.
-- **Splash Page:**
-- **Footer:**
+- **Weather API Integration:** When a city is selected it renders the current weather as well as the 5 day forecast.
+- **Try again Button:** Events are randomized after each click as they are pulled from Ticket Master API.
+- **Light/Dark Mode:** Active dark mode toggle that will swap cityscape images on main page and background and font colors on secondary pages
+- **Responsive Page / Media Queries:** Website incorporates a responsive design and media queries to make it applicable on most devices.
+- **Splash Page:** Website incorporates a splash page as a presentation of what to expect in the main page following.
+- **Automation:** Main display page has automated JavaScript to cycle cities with or without user input.
+- **API Calling:** Website upon clicking any city will automatically direct you to a page about that location with events from that area.
 
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Usage
 
@@ -52,15 +53,19 @@ The webpage acts as a tool for travelers exploring specific cities, providing re
 
 * ![SCREENSHOTS GO HERE](./assets/images/usagevid.gif)
 
+<p align="right"><a href="#readme-top">back to top</a></p>
+
 ## Contibution Screenshot
 
 !["contributions"](./assets/images/contimage.png)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Tasks and Roles
 
 Zachary Polof
 
->Developed the main page html and css styling using keyframes and CSS animations. Used JavaScript to create arrow keys to slide through cards and setup autorun to cycle on timer.
+>Developed the main page html and css styling using keyframes and CSS animations. Used JavaScript to create arrow keys to slide through cards. JavaScript based autorun for slider on main page. Implemented splash page and animation behind it. 
 ---
 
 Peter Smith
@@ -83,6 +88,8 @@ Joseph Ruff
 ---
 
 ## Team Contact
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Zachary Polof
 
