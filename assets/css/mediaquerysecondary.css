@@ -1,0 +1,71 @@
+/* - [ ]  media query break points
+    - [ ]  mobile - 320px - 480px
+    - [ ]  tablets - 481px-768px
+    - [ ]  laptops - 769px - 1024px
+    - [ ]  large - 1025px - 1200px
+    - [ ]  oversized monitors -1201px - 1440px
+    - [ ]  ultrawide - 1441px - 1960px */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    header nav {
+        font-size: .6em;
+    }
+    .nav-link {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav {
+        font-size: .4em;
+    }
+    .nav-link {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .city {
+        font-size: 2.5em;
+    }
+    .nickname {
+        font-size: 1.7em;
+    }
+    .des {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .city {
+        font-size: 2em;
+    }
+    .nickname {
+        font-size: 1.5em;
+    }
+    .des {
+        font-size: 1em;
+    }
+    .btn-lg {
+        font-size: .5em;
+        padding: 7px 7px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .city {
+        font-size: 1.5em;
+    }
+    .nickname {
+        font-size: 1em;
+    }
+    .des {
+        font-size: .5em;
+    }
+    .btn-lg {
+        font-size: .25em;
+        padding: 5px 5px;
+    }
+}
+
