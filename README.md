@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Journeys End || Lets Enjoy The Journey
+# Journeys End || Let's Enjoy The Journey
 - <a href="https://github.com/IVIonsters/Journeys-End/graphs/contributors">![Static Badge](https://img.shields.io/badge/Contributors-5-green)
 </a>
 
@@ -11,7 +11,7 @@
         <li><a href="#languages">languages</li>
         <li><a href="#features">Features</li>
         <li><a href="#usage">Usage</li>
-        <li><a href="#credits">Credits</li>
+        <li><a href="#acknowledgements">Acknowledgements</li>
         <li><a href="#license">License</li>
     </ul>
 </details>
@@ -44,7 +44,7 @@
 
 ## Usage
 
-    The webpage acts as a tool for travelers exploring specific cities, providing recommendations for events to attend. If users aren't satisfied with the initial options, they can explore additional choices by selecting the "try again" button.
+The webpage acts as a tool for travelers exploring specific cities, providing recommendations for events to attend. If users aren't satisfied with the initial options, they can explore additional choices by selecting the "try again" button.
 
 * [Journeys End Live Link](https://ivionsters.github.io/Journeys-End/)
 
@@ -74,6 +74,8 @@ Stephanie Carr
 ---
 
 David Rauf
+
+>I developed city landing pages as well as developers page. Wrote JS for current and 5 day weather forecast with OpenWeather API integration
 
 ---
 Joseph Ruff
@@ -107,37 +109,18 @@ Joseph Ruff
 >[joegruff16](https://github.com/joegruff16)
 ---
 
-## Credits
+## Acknowledgements
 
-Flowbite for icons
 
 - [Flowbite](https://flowbite.com/)
-
-Used this site code snippet to develop navbar on the second page
-
 - [w3 Schools](https://www.w3schools.com/bootstrap5/bootstrap_navbar.php)
-
-Used unsplash for photos on mainpage
-
 - [Unsplash](https://unsplash.com/)
+- [Lun Dev Code](https://www.youtube.com/@lundeveloper)
+- [dcode](https://www.youtube.com/watch?v=E6B-ig8NHQE)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
-
-dcode tutorial on insertAdjacentHTML 
-
-- [youtube](https://www.youtube.com/watch?v=E6B-ig8NHQE)
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-
-
-
-
-
-<!-- REFERENCE LINKS HERE -->
-
-[Static Badge]: (https://img.shields.io/badge/Contributors-5-green)
-[contributors]: https://github.com/IVIonsters/Journeys-End/graphs/contributors
