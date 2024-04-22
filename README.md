@@ -18,8 +18,8 @@
 
 ## Description
 
-    Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
-    While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!
+<p>Ever wanted to travel but yet, had no idea what to see when you arrive? or where to go? Well fear not!, this application will show you several ideas of events to check out while your in town!
+    While still in development for nationwide events, we've picked some of our favorites to show you what to expect in the future so come back around and check for more soon!</p>
 
 
 ## Languages
@@ -130,4 +130,3 @@ Joseph Ruff
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
